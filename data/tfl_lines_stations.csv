@@ -1,0 +1,840 @@
+line,branch_id,order,station_name,lat,lon
+bakerloo,0,0,Harrow & Wealdstone Underground Station,51.592268,-0.335217
+bakerloo,0,1,Kenton Underground Station,51.581756,-0.31691
+bakerloo,0,2,South Kenton Underground Station,51.570232,-0.308433
+bakerloo,0,3,North Wembley Underground Station,51.562551,-0.304
+bakerloo,0,4,Wembley Central Underground Station,51.552304,-0.296852
+bakerloo,0,5,Stonebridge Park Underground Station,51.543959,-0.275892
+bakerloo,0,6,Harlesden Underground Station,51.53631,-0.257883
+bakerloo,0,7,Willesden Junction Underground Station,51.532259,-0.244283
+bakerloo,0,8,Kensal Green Underground Station,51.530539,-0.225016
+bakerloo,0,9,Queen's Park Underground Station,51.534158,-0.204574
+bakerloo,0,10,Kilburn Park Underground Station,51.534979,-0.194232
+bakerloo,0,11,Maida Vale Underground Station,51.529777,-0.185758
+bakerloo,0,12,Warwick Avenue Underground Station,51.523263,-0.183783
+bakerloo,0,13,Paddington Underground Station,51.516581,-0.175689
+bakerloo,0,14,Edgware Road (Bakerloo) Underground Station,51.520299,-0.17015
+bakerloo,0,15,Marylebone Underground Station,51.522322,-0.163207
+bakerloo,0,16,Baker Street Underground Station,51.522883,-0.15713
+bakerloo,0,17,Regent's Park Underground Station,51.523344,-0.146444
+bakerloo,0,18,Oxford Circus Underground Station,51.515224,-0.141903
+bakerloo,0,19,Piccadilly Circus Underground Station,51.51005,-0.133798
+bakerloo,0,20,Charing Cross Underground Station,51.50741,-0.127277
+bakerloo,0,21,Embankment Underground Station,51.507058,-0.122666
+bakerloo,0,22,Waterloo Underground Station,51.503299,-0.11478
+bakerloo,0,23,Lambeth North Underground Station,51.498808,-0.112315
+bakerloo,0,24,Elephant & Castle Underground Station,51.494536,-0.100606
+bakerloo,1,0,Elephant & Castle Underground Station,51.494536,-0.100606
+bakerloo,1,1,Lambeth North Underground Station,51.498808,-0.112315
+bakerloo,1,2,Waterloo Underground Station,51.503299,-0.11478
+bakerloo,1,3,Embankment Underground Station,51.507058,-0.122666
+bakerloo,1,4,Charing Cross Underground Station,51.50741,-0.127277
+bakerloo,1,5,Piccadilly Circus Underground Station,51.51005,-0.133798
+bakerloo,1,6,Oxford Circus Underground Station,51.515224,-0.141903
+bakerloo,1,7,Regent's Park Underground Station,51.523344,-0.146444
+bakerloo,1,8,Baker Street Underground Station,51.522883,-0.15713
+bakerloo,1,9,Marylebone Underground Station,51.522322,-0.163207
+bakerloo,1,10,Edgware Road (Bakerloo) Underground Station,51.520299,-0.17015
+bakerloo,1,11,Paddington Underground Station,51.516581,-0.175689
+bakerloo,1,12,Warwick Avenue Underground Station,51.523263,-0.183783
+bakerloo,1,13,Maida Vale Underground Station,51.529777,-0.185758
+bakerloo,1,14,Kilburn Park Underground Station,51.534979,-0.194232
+bakerloo,1,15,Queen's Park Underground Station,51.534158,-0.204574
+bakerloo,1,16,Kensal Green Underground Station,51.530539,-0.225016
+bakerloo,1,17,Willesden Junction Underground Station,51.532259,-0.244283
+bakerloo,1,18,Harlesden Underground Station,51.53631,-0.257883
+bakerloo,1,19,Stonebridge Park Underground Station,51.543959,-0.275892
+bakerloo,1,20,Wembley Central Underground Station,51.552304,-0.296852
+bakerloo,1,21,North Wembley Underground Station,51.562551,-0.304
+bakerloo,1,22,South Kenton Underground Station,51.570232,-0.308433
+bakerloo,1,23,Kenton Underground Station,51.581756,-0.31691
+bakerloo,1,24,Harrow & Wealdstone Underground Station,51.592268,-0.335217
+central,0,0,Epping Underground Station,51.69368,0.113767
+central,0,1,Theydon Bois Underground Station,51.671759,0.103085
+central,0,2,Debden Underground Station,51.645386,0.083782
+central,0,3,Loughton Underground Station,51.641443,0.055476
+central,0,4,Buckhurst Hill Underground Station,51.626605,0.046757
+central,0,5,Woodford Underground Station,51.606899,0.03397
+central,1,0,Woodford Underground Station,51.606899,0.03397
+central,1,1,South Woodford Underground Station,51.591907,0.027338
+central,1,2,Snaresbrook Underground Station,51.580678,0.02144
+central,1,3,Leytonstone Underground Station,51.568324,0.008194
+central,2,0,Leytonstone Underground Station,51.568324,0.008194
+central,2,1,Leyton Underground Station,51.556589,-0.005523
+central,2,2,Stratford Underground Station,51.541806,-0.003458
+central,2,3,Mile End Underground Station,51.525122,-0.03364
+central,2,4,Bethnal Green Underground Station,51.527222,-0.055506
+central,2,5,Liverpool Street Underground Station,51.517372,-0.083182
+central,2,6,Bank Underground Station,51.513132,-0.090047
+central,2,7,St. Paul's Underground Station,51.514936,-0.097567
+central,2,8,Chancery Lane Underground Station,51.518247,-0.111583
+central,2,9,Holborn Underground Station,51.51758,-0.120475
+central,2,10,Tottenham Court Road Underground Station,51.516426,-0.13041
+central,2,11,Oxford Circus Underground Station,51.515224,-0.141903
+central,2,12,Bond Street Underground Station,51.514304,-0.149723
+central,2,13,Marble Arch Underground Station,51.513424,-0.158953
+central,2,14,Lancaster Gate Underground Station,51.511723,-0.175494
+central,2,15,Queensway Underground Station,51.510312,-0.187152
+central,2,16,Notting Hill Gate Underground Station,51.509128,-0.196104
+central,2,17,Holland Park Underground Station,51.507143,-0.205679
+central,2,18,Shepherd's Bush (Central) Underground Station,51.504376,-0.218813
+central,2,19,White City Underground Station,51.511959,-0.224297
+central,2,20,East Acton Underground Station,51.516612,-0.247248
+central,2,21,North Acton Underground Station,51.523524,-0.259755
+central,3,0,North Acton Underground Station,51.523524,-0.259755
+central,3,1,Hanger Lane Underground Station,51.530177,-0.292704
+central,3,2,Perivale Underground Station,51.536717,-0.323446
+central,3,3,Greenford Underground Station,51.542424,-0.34605
+central,3,4,Northolt Underground Station,51.548236,-0.368699
+central,3,5,South Ruislip Underground Station,51.556853,-0.398915
+central,3,6,Ruislip Gardens Underground Station,51.560736,-0.41071
+central,3,7,West Ruislip Underground Station,51.569688,-0.437886
+central,4,0,West Ruislip Underground Station,51.569688,-0.437886
+central,4,1,Ruislip Gardens Underground Station,51.560736,-0.41071
+central,4,2,South Ruislip Underground Station,51.556853,-0.398915
+central,4,3,Northolt Underground Station,51.548236,-0.368699
+central,4,4,Greenford Underground Station,51.542424,-0.34605
+central,4,5,Perivale Underground Station,51.536717,-0.323446
+central,4,6,Hanger Lane Underground Station,51.530177,-0.292704
+central,4,7,North Acton Underground Station,51.523524,-0.259755
+central,5,0,North Acton Underground Station,51.523524,-0.259755
+central,5,1,East Acton Underground Station,51.516612,-0.247248
+central,5,2,White City Underground Station,51.511959,-0.224297
+central,5,3,Shepherd's Bush (Central) Underground Station,51.504376,-0.218813
+central,5,4,Holland Park Underground Station,51.507143,-0.205679
+central,5,5,Notting Hill Gate Underground Station,51.509128,-0.196104
+central,5,6,Queensway Underground Station,51.510312,-0.187152
+central,5,7,Lancaster Gate Underground Station,51.511723,-0.175494
+central,5,8,Marble Arch Underground Station,51.513424,-0.158953
+central,5,9,Bond Street Underground Station,51.514304,-0.149723
+central,5,10,Oxford Circus Underground Station,51.515224,-0.141903
+central,5,11,Tottenham Court Road Underground Station,51.516426,-0.13041
+central,5,12,Holborn Underground Station,51.51758,-0.120475
+central,5,13,Chancery Lane Underground Station,51.518247,-0.111583
+central,5,14,St. Paul's Underground Station,51.514936,-0.097567
+central,5,15,Bank Underground Station,51.513132,-0.090047
+central,5,16,Liverpool Street Underground Station,51.517372,-0.083182
+central,5,17,Bethnal Green Underground Station,51.527222,-0.055506
+central,5,18,Mile End Underground Station,51.525122,-0.03364
+central,5,19,Stratford Underground Station,51.541806,-0.003458
+central,5,20,Leyton Underground Station,51.556589,-0.005523
+central,5,21,Leytonstone Underground Station,51.568324,0.008194
+central,6,0,Leytonstone Underground Station,51.568324,0.008194
+central,6,1,Snaresbrook Underground Station,51.580678,0.02144
+central,6,2,South Woodford Underground Station,51.591907,0.027338
+central,6,3,Woodford Underground Station,51.606899,0.03397
+central,7,0,Woodford Underground Station,51.606899,0.03397
+central,7,1,Buckhurst Hill Underground Station,51.626605,0.046757
+central,7,2,Loughton Underground Station,51.641443,0.055476
+central,7,3,Debden Underground Station,51.645386,0.083782
+central,7,4,Theydon Bois Underground Station,51.671759,0.103085
+central,7,5,Epping Underground Station,51.69368,0.113767
+central,8,0,Hainault Underground Station,51.603659,0.093482
+central,8,1,Fairlop Underground Station,51.595618,0.091004
+central,8,2,Barkingside Underground Station,51.585689,0.088585
+central,8,3,Newbury Park Underground Station,51.575726,0.090004
+central,8,4,Gants Hill Underground Station,51.576544,0.066185
+central,8,5,Redbridge Underground Station,51.576243,0.04536
+central,8,6,Wanstead Underground Station,51.575501,0.028527
+central,8,7,Leytonstone Underground Station,51.568324,0.008194
+central,9,0,Hainault Underground Station,51.603659,0.093482
+central,9,1,Grange Hill Underground Station,51.613378,0.092066
+central,9,2,Chigwell Underground Station,51.617916,0.075041
+central,9,3,Roding Valley Underground Station,51.617199,0.043647
+central,9,4,Woodford Underground Station,51.606899,0.03397
+central,10,0,Leytonstone Underground Station,51.568324,0.008194
+central,10,1,Wanstead Underground Station,51.575501,0.028527
+central,10,2,Redbridge Underground Station,51.576243,0.04536
+central,10,3,Gants Hill Underground Station,51.576544,0.066185
+central,10,4,Newbury Park Underground Station,51.575726,0.090004
+central,10,5,Barkingside Underground Station,51.585689,0.088585
+central,10,6,Fairlop Underground Station,51.595618,0.091004
+central,10,7,Hainault Underground Station,51.603659,0.093482
+central,11,0,Woodford Underground Station,51.606899,0.03397
+central,11,1,Roding Valley Underground Station,51.617199,0.043647
+central,11,2,Chigwell Underground Station,51.617916,0.075041
+central,11,3,Grange Hill Underground Station,51.613378,0.092066
+central,11,4,Hainault Underground Station,51.603659,0.093482
+central,12,0,North Acton Underground Station,51.523524,-0.259755
+central,12,1,West Acton Underground Station,51.518001,-0.28098
+central,12,2,Ealing Broadway Underground Station,51.515017,-0.301457
+central,13,0,Ealing Broadway Underground Station,51.515017,-0.301457
+central,13,1,West Acton Underground Station,51.518001,-0.28098
+central,13,2,North Acton Underground Station,51.523524,-0.259755
+circle,0,0,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+circle,0,1,Paddington Underground Station,51.516581,-0.175689
+circle,0,2,Bayswater Underground Station,51.512284,-0.187938
+circle,0,3,Notting Hill Gate Underground Station,51.509128,-0.196104
+circle,0,4,High Street Kensington Underground Station,51.501055,-0.192792
+circle,0,5,Gloucester Road Underground Station,51.494316,-0.182658
+circle,0,6,South Kensington Underground Station,51.494094,-0.174138
+circle,0,7,Sloane Square Underground Station,51.49227,-0.156377
+circle,0,8,Victoria Underground Station,51.496359,-0.143102
+circle,0,9,St. James's Park Underground Station,51.499544,-0.133608
+circle,0,10,Westminster Underground Station,51.50132,-0.124861
+circle,0,11,Embankment Underground Station,51.507058,-0.122666
+circle,0,12,Temple Underground Station,51.511006,-0.11426
+circle,0,13,Blackfriars Underground Station,51.511581,-0.103659
+circle,0,14,Mansion House Underground Station,51.512117,-0.094009
+circle,0,15,Cannon Street Underground Station,51.51151,-0.090432
+circle,0,16,Monument Underground Station,51.5107,-0.085969
+circle,0,17,Tower Hill Underground Station,51.509971,-0.076546
+circle,0,18,Aldgate Underground Station,51.514246,-0.075689
+circle,0,19,Liverpool Street Underground Station,51.517372,-0.083182
+circle,0,20,Moorgate Underground Station,51.518176,-0.088322
+circle,0,21,Barbican Underground Station,51.520275,-0.097993
+circle,0,22,Farringdon Underground Station,51.520252,-0.104913
+circle,0,23,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+circle,0,24,Euston Square Underground Station,51.525604,-0.135829
+circle,0,25,Great Portland Street Underground Station,51.52384,-0.144262
+circle,0,26,Baker Street Underground Station,51.522883,-0.15713
+circle,0,27,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+circle,1,0,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+circle,1,1,Paddington (H&C Line)-Underground,51.518187,-0.178306
+circle,1,2,Royal Oak Underground Station,51.519113,-0.188748
+circle,1,3,Westbourne Park Underground Station,51.52111,-0.201065
+circle,1,4,Ladbroke Grove Underground Station,51.517449,-0.210391
+circle,1,5,Latimer Road Underground Station,51.513389,-0.217799
+circle,1,6,Wood Lane Underground Station,51.509669,-0.22453
+circle,1,7,Shepherd's Bush Market Underground Station,51.505579,-0.226375
+circle,1,8,Goldhawk Road Underground Station,51.502005,-0.226715
+circle,1,9,Hammersmith (H&C Line) Underground Station,51.49339,-0.22503
+circle,2,0,Hammersmith (H&C Line) Underground Station,51.49339,-0.22503
+circle,2,1,Goldhawk Road Underground Station,51.502005,-0.226715
+circle,2,2,Shepherd's Bush Market Underground Station,51.505579,-0.226375
+circle,2,3,Wood Lane Underground Station,51.509669,-0.22453
+circle,2,4,Latimer Road Underground Station,51.513389,-0.217799
+circle,2,5,Ladbroke Grove Underground Station,51.517449,-0.210391
+circle,2,6,Westbourne Park Underground Station,51.52111,-0.201065
+circle,2,7,Royal Oak Underground Station,51.519113,-0.188748
+circle,2,8,Paddington (H&C Line)-Underground,51.518187,-0.178306
+circle,2,9,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+circle,3,0,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+circle,3,1,Baker Street Underground Station,51.522883,-0.15713
+circle,3,2,Great Portland Street Underground Station,51.52384,-0.144262
+circle,3,3,Euston Square Underground Station,51.525604,-0.135829
+circle,3,4,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+circle,3,5,Farringdon Underground Station,51.520252,-0.104913
+circle,3,6,Barbican Underground Station,51.520275,-0.097993
+circle,3,7,Moorgate Underground Station,51.518176,-0.088322
+circle,3,8,Liverpool Street Underground Station,51.517372,-0.083182
+circle,3,9,Aldgate Underground Station,51.514246,-0.075689
+circle,3,10,Tower Hill Underground Station,51.509971,-0.076546
+circle,3,11,Monument Underground Station,51.5107,-0.085969
+circle,3,12,Cannon Street Underground Station,51.51151,-0.090432
+circle,3,13,Mansion House Underground Station,51.512117,-0.094009
+circle,3,14,Blackfriars Underground Station,51.511581,-0.103659
+circle,3,15,Temple Underground Station,51.511006,-0.11426
+circle,3,16,Embankment Underground Station,51.507058,-0.122666
+circle,3,17,Westminster Underground Station,51.50132,-0.124861
+circle,3,18,St. James's Park Underground Station,51.499544,-0.133608
+circle,3,19,Victoria Underground Station,51.496359,-0.143102
+circle,3,20,Sloane Square Underground Station,51.49227,-0.156377
+circle,3,21,South Kensington Underground Station,51.494094,-0.174138
+circle,3,22,Gloucester Road Underground Station,51.494316,-0.182658
+circle,3,23,High Street Kensington Underground Station,51.501055,-0.192792
+circle,3,24,Notting Hill Gate Underground Station,51.509128,-0.196104
+circle,3,25,Bayswater Underground Station,51.512284,-0.187938
+circle,3,26,Paddington Underground Station,51.516581,-0.175689
+circle,3,27,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+district,0,0,Upminster Underground Station,51.559063,0.250882
+district,0,1,Upminster Bridge Underground Station,51.55856,0.235809
+district,0,2,Hornchurch Underground Station,51.554093,0.219116
+district,0,3,Elm Park Underground Station,51.549775,0.19864
+district,0,4,Dagenham East Underground Station,51.544096,0.166017
+district,0,5,Dagenham Heathway Underground Station,51.541639,0.147527
+district,0,6,Becontree Underground Station,51.540331,0.127016
+district,0,7,Upney Underground Station,51.538372,0.10153
+district,0,8,Barking Underground Station,51.539321,0.081053
+district,0,9,East Ham Underground Station,51.538948,0.051186
+district,0,10,Upton Park Underground Station,51.53534,0.035263
+district,0,11,Plaistow Underground Station,51.531341,0.017451
+district,0,12,West Ham Underground Station,51.528136,0.005055
+district,0,13,Bromley-by-Bow Underground Station,51.524839,-0.011538
+district,0,14,Bow Road Underground Station,51.52694,-0.025128
+district,0,15,Mile End Underground Station,51.525122,-0.03364
+district,0,16,Stepney Green Underground Station,51.521858,-0.046596
+district,0,17,Whitechapel Underground Station,51.519518,-0.059971
+district,0,18,Aldgate East Underground Station,51.515037,-0.072384
+district,0,19,Tower Hill Underground Station,51.509971,-0.076546
+district,0,20,Monument Underground Station,51.5107,-0.085969
+district,0,21,Cannon Street Underground Station,51.51151,-0.090432
+district,0,22,Mansion House Underground Station,51.512117,-0.094009
+district,0,23,Blackfriars Underground Station,51.511581,-0.103659
+district,0,24,Temple Underground Station,51.511006,-0.11426
+district,0,25,Embankment Underground Station,51.507058,-0.122666
+district,0,26,Westminster Underground Station,51.50132,-0.124861
+district,0,27,St. James's Park Underground Station,51.499544,-0.133608
+district,0,28,Victoria Underground Station,51.496359,-0.143102
+district,0,29,Sloane Square Underground Station,51.49227,-0.156377
+district,0,30,South Kensington Underground Station,51.494094,-0.174138
+district,0,31,Gloucester Road Underground Station,51.494316,-0.182658
+district,0,32,Earl's Court Underground Station,51.492063,-0.193378
+district,1,0,Earl's Court Underground Station,51.492063,-0.193378
+district,1,1,West Kensington Underground Station,51.490459,-0.206636
+district,1,2,Barons Court Underground Station,51.490311,-0.213427
+district,1,3,Hammersmith (Dist&Picc Line) Underground Station,51.4923,-0.22362
+district,1,4,Ravenscourt Park Underground Station,51.494122,-0.235881
+district,1,5,Stamford Brook Underground Station,51.494917,-0.245704
+district,1,6,Turnham Green Underground Station,51.495148,-0.254555
+district,2,0,Turnham Green Underground Station,51.495148,-0.254555
+district,2,1,Chiswick Park Underground Station,51.494627,-0.267972
+district,2,2,Acton Town Underground Station,51.503057,-0.280462
+district,2,3,Ealing Common Underground Station,51.51014,-0.288265
+district,2,4,Ealing Broadway Underground Station,51.515017,-0.301457
+district,3,0,Ealing Broadway Underground Station,51.515017,-0.301457
+district,3,1,Ealing Common Underground Station,51.51014,-0.288265
+district,3,2,Acton Town Underground Station,51.503057,-0.280462
+district,3,3,Chiswick Park Underground Station,51.494627,-0.267972
+district,3,4,Turnham Green Underground Station,51.495148,-0.254555
+district,4,0,Turnham Green Underground Station,51.495148,-0.254555
+district,4,1,Stamford Brook Underground Station,51.494917,-0.245704
+district,4,2,Ravenscourt Park Underground Station,51.494122,-0.235881
+district,4,3,Hammersmith (Dist&Picc Line) Underground Station,51.4923,-0.22362
+district,4,4,Barons Court Underground Station,51.490311,-0.213427
+district,4,5,West Kensington Underground Station,51.490459,-0.206636
+district,4,6,Earl's Court Underground Station,51.492063,-0.193378
+district,5,0,Earl's Court Underground Station,51.492063,-0.193378
+district,5,1,Gloucester Road Underground Station,51.494316,-0.182658
+district,5,2,South Kensington Underground Station,51.494094,-0.174138
+district,5,3,Sloane Square Underground Station,51.49227,-0.156377
+district,5,4,Victoria Underground Station,51.496359,-0.143102
+district,5,5,St. James's Park Underground Station,51.499544,-0.133608
+district,5,6,Westminster Underground Station,51.50132,-0.124861
+district,5,7,Embankment Underground Station,51.507058,-0.122666
+district,5,8,Temple Underground Station,51.511006,-0.11426
+district,5,9,Blackfriars Underground Station,51.511581,-0.103659
+district,5,10,Mansion House Underground Station,51.512117,-0.094009
+district,5,11,Cannon Street Underground Station,51.51151,-0.090432
+district,5,12,Monument Underground Station,51.5107,-0.085969
+district,5,13,Tower Hill Underground Station,51.509971,-0.076546
+district,5,14,Aldgate East Underground Station,51.515037,-0.072384
+district,5,15,Whitechapel Underground Station,51.519518,-0.059971
+district,5,16,Stepney Green Underground Station,51.521858,-0.046596
+district,5,17,Mile End Underground Station,51.525122,-0.03364
+district,5,18,Bow Road Underground Station,51.52694,-0.025128
+district,5,19,Bromley-by-Bow Underground Station,51.524839,-0.011538
+district,5,20,West Ham Underground Station,51.528136,0.005055
+district,5,21,Plaistow Underground Station,51.531341,0.017451
+district,5,22,Upton Park Underground Station,51.53534,0.035263
+district,5,23,East Ham Underground Station,51.538948,0.051186
+district,5,24,Barking Underground Station,51.539321,0.081053
+district,5,25,Upney Underground Station,51.538372,0.10153
+district,5,26,Becontree Underground Station,51.540331,0.127016
+district,5,27,Dagenham Heathway Underground Station,51.541639,0.147527
+district,5,28,Dagenham East Underground Station,51.544096,0.166017
+district,5,29,Elm Park Underground Station,51.549775,0.19864
+district,5,30,Hornchurch Underground Station,51.554093,0.219116
+district,5,31,Upminster Bridge Underground Station,51.55856,0.235809
+district,5,32,Upminster Underground Station,51.559063,0.250882
+district,6,0,Turnham Green Underground Station,51.495148,-0.254555
+district,6,1,Gunnersbury Underground Station,51.491803,-0.275267
+district,6,2,Kew Gardens Underground Station,51.477058,-0.285241
+district,6,3,Richmond Underground Station,51.463237,-0.301336
+district,7,0,Richmond Underground Station,51.463237,-0.301336
+district,7,1,Kew Gardens Underground Station,51.477058,-0.285241
+district,7,2,Gunnersbury Underground Station,51.491803,-0.275267
+district,7,3,Turnham Green Underground Station,51.495148,-0.254555
+district,8,0,Earl's Court Underground Station,51.492063,-0.193378
+district,8,1,West Brompton Underground Station,51.487268,-0.195599
+district,8,2,Fulham Broadway Underground Station,51.480081,-0.195422
+district,8,3,Parsons Green Underground Station,51.475277,-0.20117
+district,8,4,Putney Bridge Underground Station,51.468262,-0.208731
+district,8,5,East Putney Underground Station,51.459205,-0.211
+district,8,6,Southfields Underground Station,51.445073,-0.206602
+district,8,7,Wimbledon Park Underground Station,51.434573,-0.199719
+district,8,8,Wimbledon Underground Station,51.421207,-0.206573
+district,9,0,Wimbledon Underground Station,51.421207,-0.206573
+district,9,1,Wimbledon Park Underground Station,51.434573,-0.199719
+district,9,2,Southfields Underground Station,51.445073,-0.206602
+district,9,3,East Putney Underground Station,51.459205,-0.211
+district,9,4,Putney Bridge Underground Station,51.468262,-0.208731
+district,9,5,Parsons Green Underground Station,51.475277,-0.20117
+district,9,6,Fulham Broadway Underground Station,51.480081,-0.195422
+district,9,7,West Brompton Underground Station,51.487268,-0.195599
+district,9,8,Earl's Court Underground Station,51.492063,-0.193378
+district,10,0,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+district,10,1,Paddington Underground Station,51.516581,-0.175689
+district,10,2,Bayswater Underground Station,51.512284,-0.187938
+district,10,3,Notting Hill Gate Underground Station,51.509128,-0.196104
+district,10,4,High Street Kensington Underground Station,51.501055,-0.192792
+district,10,5,Earl's Court Underground Station,51.492063,-0.193378
+district,11,0,Earl's Court Underground Station,51.492063,-0.193378
+district,11,1,High Street Kensington Underground Station,51.501055,-0.192792
+district,11,2,Notting Hill Gate Underground Station,51.509128,-0.196104
+district,11,3,Bayswater Underground Station,51.512284,-0.187938
+district,11,4,Paddington Underground Station,51.516581,-0.175689
+district,11,5,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+district,12,0,Earl's Court Underground Station,51.492063,-0.193378
+district,12,1,Kensington (Olympia) Underground Station,51.497624,-0.210015
+district,13,0,Kensington (Olympia) Underground Station,51.497624,-0.210015
+district,13,1,Earl's Court Underground Station,51.492063,-0.193378
+hammersmith-city,0,0,Barking Underground Station,51.539321,0.081053
+hammersmith-city,0,1,East Ham Underground Station,51.538948,0.051186
+hammersmith-city,0,2,Upton Park Underground Station,51.53534,0.035263
+hammersmith-city,0,3,Plaistow Underground Station,51.531341,0.017451
+hammersmith-city,0,4,West Ham Underground Station,51.528136,0.005055
+hammersmith-city,0,5,Bromley-by-Bow Underground Station,51.524839,-0.011538
+hammersmith-city,0,6,Bow Road Underground Station,51.52694,-0.025128
+hammersmith-city,0,7,Mile End Underground Station,51.525122,-0.03364
+hammersmith-city,0,8,Stepney Green Underground Station,51.521858,-0.046596
+hammersmith-city,0,9,Whitechapel Underground Station,51.519518,-0.059971
+hammersmith-city,0,10,Aldgate East Underground Station,51.515037,-0.072384
+hammersmith-city,0,11,Liverpool Street Underground Station,51.517372,-0.083182
+hammersmith-city,0,12,Moorgate Underground Station,51.518176,-0.088322
+hammersmith-city,0,13,Barbican Underground Station,51.520275,-0.097993
+hammersmith-city,0,14,Farringdon Underground Station,51.520252,-0.104913
+hammersmith-city,0,15,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+hammersmith-city,0,16,Euston Square Underground Station,51.525604,-0.135829
+hammersmith-city,0,17,Great Portland Street Underground Station,51.52384,-0.144262
+hammersmith-city,0,18,Baker Street Underground Station,51.522883,-0.15713
+hammersmith-city,0,19,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+hammersmith-city,0,20,Paddington (H&C Line)-Underground,51.518187,-0.178306
+hammersmith-city,0,21,Royal Oak Underground Station,51.519113,-0.188748
+hammersmith-city,0,22,Westbourne Park Underground Station,51.52111,-0.201065
+hammersmith-city,0,23,Ladbroke Grove Underground Station,51.517449,-0.210391
+hammersmith-city,0,24,Latimer Road Underground Station,51.513389,-0.217799
+hammersmith-city,0,25,Wood Lane Underground Station,51.509669,-0.22453
+hammersmith-city,0,26,Shepherd's Bush Market Underground Station,51.505579,-0.226375
+hammersmith-city,0,27,Goldhawk Road Underground Station,51.502005,-0.226715
+hammersmith-city,0,28,Hammersmith (H&C Line) Underground Station,51.49339,-0.22503
+hammersmith-city,1,0,Hammersmith (H&C Line) Underground Station,51.49339,-0.22503
+hammersmith-city,1,1,Goldhawk Road Underground Station,51.502005,-0.226715
+hammersmith-city,1,2,Shepherd's Bush Market Underground Station,51.505579,-0.226375
+hammersmith-city,1,3,Wood Lane Underground Station,51.509669,-0.22453
+hammersmith-city,1,4,Latimer Road Underground Station,51.513389,-0.217799
+hammersmith-city,1,5,Ladbroke Grove Underground Station,51.517449,-0.210391
+hammersmith-city,1,6,Westbourne Park Underground Station,51.52111,-0.201065
+hammersmith-city,1,7,Royal Oak Underground Station,51.519113,-0.188748
+hammersmith-city,1,8,Paddington (H&C Line)-Underground,51.518187,-0.178306
+hammersmith-city,1,9,Edgware Road (Circle Line) Underground Station,51.519858,-0.167832
+hammersmith-city,1,10,Baker Street Underground Station,51.522883,-0.15713
+hammersmith-city,1,11,Great Portland Street Underground Station,51.52384,-0.144262
+hammersmith-city,1,12,Euston Square Underground Station,51.525604,-0.135829
+hammersmith-city,1,13,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+hammersmith-city,1,14,Farringdon Underground Station,51.520252,-0.104913
+hammersmith-city,1,15,Barbican Underground Station,51.520275,-0.097993
+hammersmith-city,1,16,Moorgate Underground Station,51.518176,-0.088322
+hammersmith-city,1,17,Liverpool Street Underground Station,51.517372,-0.083182
+hammersmith-city,1,18,Aldgate East Underground Station,51.515037,-0.072384
+hammersmith-city,1,19,Whitechapel Underground Station,51.519518,-0.059971
+hammersmith-city,1,20,Stepney Green Underground Station,51.521858,-0.046596
+hammersmith-city,1,21,Mile End Underground Station,51.525122,-0.03364
+hammersmith-city,1,22,Bow Road Underground Station,51.52694,-0.025128
+hammersmith-city,1,23,Bromley-by-Bow Underground Station,51.524839,-0.011538
+hammersmith-city,1,24,West Ham Underground Station,51.528136,0.005055
+hammersmith-city,1,25,Plaistow Underground Station,51.531341,0.017451
+hammersmith-city,1,26,Upton Park Underground Station,51.53534,0.035263
+hammersmith-city,1,27,East Ham Underground Station,51.538948,0.051186
+hammersmith-city,1,28,Barking Underground Station,51.539321,0.081053
+jubilee,0,0,Stratford Underground Station,51.541806,-0.003458
+jubilee,0,1,West Ham Underground Station,51.528136,0.005055
+jubilee,0,2,Canning Town Underground Station,51.513584,0.008322
+jubilee,0,3,North Greenwich Underground Station,51.50047,0.004287
+jubilee,0,4,Canary Wharf Underground Station,51.503488,-0.018246
+jubilee,0,5,Canada Water Underground Station,51.497931,-0.049405
+jubilee,0,6,Bermondsey Underground Station,51.49775,-0.063993
+jubilee,0,7,London Bridge Underground Station,51.505721,-0.088873
+jubilee,0,8,Southwark Underground Station,51.50427,-0.105331
+jubilee,0,9,Waterloo Underground Station,51.503299,-0.11478
+jubilee,0,10,Westminster Underground Station,51.50132,-0.124861
+jubilee,0,11,Green Park Underground Station,51.506947,-0.142787
+jubilee,0,12,Bond Street Underground Station,51.514304,-0.149723
+jubilee,0,13,Baker Street Underground Station,51.522883,-0.15713
+jubilee,0,14,St. John's Wood Underground Station,51.534521,-0.173948
+jubilee,0,15,Swiss Cottage Underground Station,51.543681,-0.174894
+jubilee,0,16,Finchley Road Underground Station,51.546825,-0.179845
+jubilee,0,17,West Hampstead Underground Station,51.546638,-0.191059
+jubilee,0,18,Kilburn Underground Station,51.547183,-0.204248
+jubilee,0,19,Willesden Green Underground Station,51.549146,-0.221537
+jubilee,0,20,Dollis Hill Underground Station,51.551955,-0.239068
+jubilee,0,21,Neasden Underground Station,51.553986,-0.249837
+jubilee,0,22,Wembley Park Underground Station,51.563198,-0.279262
+jubilee,0,23,Kingsbury Underground Station,51.584845,-0.27879
+jubilee,0,24,Queensbury Underground Station,51.594188,-0.286219
+jubilee,0,25,Canons Park Underground Station,51.607701,-0.294693
+jubilee,0,26,Stanmore Underground Station,51.619839,-0.303266
+jubilee,1,0,Stanmore Underground Station,51.619839,-0.303266
+jubilee,1,1,Canons Park Underground Station,51.607701,-0.294693
+jubilee,1,2,Queensbury Underground Station,51.594188,-0.286219
+jubilee,1,3,Kingsbury Underground Station,51.584845,-0.27879
+jubilee,1,4,Wembley Park Underground Station,51.563198,-0.279262
+jubilee,1,5,Neasden Underground Station,51.553986,-0.249837
+jubilee,1,6,Dollis Hill Underground Station,51.551955,-0.239068
+jubilee,1,7,Willesden Green Underground Station,51.549146,-0.221537
+jubilee,1,8,Kilburn Underground Station,51.547183,-0.204248
+jubilee,1,9,West Hampstead Underground Station,51.546638,-0.191059
+jubilee,1,10,Finchley Road Underground Station,51.546825,-0.179845
+jubilee,1,11,Swiss Cottage Underground Station,51.543681,-0.174894
+jubilee,1,12,St. John's Wood Underground Station,51.534521,-0.173948
+jubilee,1,13,Baker Street Underground Station,51.522883,-0.15713
+jubilee,1,14,Bond Street Underground Station,51.514304,-0.149723
+jubilee,1,15,Green Park Underground Station,51.506947,-0.142787
+jubilee,1,16,Westminster Underground Station,51.50132,-0.124861
+jubilee,1,17,Waterloo Underground Station,51.503299,-0.11478
+jubilee,1,18,Southwark Underground Station,51.50427,-0.105331
+jubilee,1,19,London Bridge Underground Station,51.505721,-0.088873
+jubilee,1,20,Bermondsey Underground Station,51.49775,-0.063993
+jubilee,1,21,Canada Water Underground Station,51.497931,-0.049405
+jubilee,1,22,Canary Wharf Underground Station,51.503488,-0.018246
+jubilee,1,23,North Greenwich Underground Station,51.50047,0.004287
+jubilee,1,24,Canning Town Underground Station,51.513584,0.008322
+jubilee,1,25,West Ham Underground Station,51.528136,0.005055
+jubilee,1,26,Stratford Underground Station,51.541806,-0.003458
+metropolitan,0,0,Aldgate Underground Station,51.514246,-0.075689
+metropolitan,0,1,Liverpool Street Underground Station,51.517372,-0.083182
+metropolitan,0,2,Moorgate Underground Station,51.518176,-0.088322
+metropolitan,0,3,Barbican Underground Station,51.520275,-0.097993
+metropolitan,0,4,Farringdon Underground Station,51.520252,-0.104913
+metropolitan,0,5,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+metropolitan,0,6,Euston Square Underground Station,51.525604,-0.135829
+metropolitan,0,7,Great Portland Street Underground Station,51.52384,-0.144262
+metropolitan,0,8,Baker Street Underground Station,51.522883,-0.15713
+metropolitan,0,9,Finchley Road Underground Station,51.546825,-0.179845
+metropolitan,0,10,Wembley Park Underground Station,51.563198,-0.279262
+metropolitan,0,11,Preston Road Underground Station,51.571972,-0.295107
+metropolitan,0,12,Northwick Park Underground Station,51.578481,-0.318056
+metropolitan,0,13,Harrow-on-the-Hill Underground Station,51.579195,-0.337225
+metropolitan,1,0,Harrow-on-the-Hill Underground Station,51.579195,-0.337225
+metropolitan,1,1,North Harrow Underground Station,51.584872,-0.362408
+metropolitan,1,2,Pinner Underground Station,51.592901,-0.381161
+metropolitan,1,3,Northwood Hills Underground Station,51.600572,-0.409464
+metropolitan,1,4,Northwood Underground Station,51.611053,-0.423829
+metropolitan,1,5,Moor Park Underground Station,51.629845,-0.432454
+metropolitan,2,0,Moor Park Underground Station,51.629845,-0.432454
+metropolitan,2,1,Rickmansworth Underground Station,51.640207,-0.473703
+metropolitan,2,2,Chorleywood Underground Station,51.654358,-0.518461
+metropolitan,2,3,Chalfont & Latimer Underground Station,51.667985,-0.560689
+metropolitan,3,0,Chalfont & Latimer Underground Station,51.667985,-0.560689
+metropolitan,3,1,Chesham Underground Station,51.705208,-0.611247
+metropolitan,4,0,Chalfont & Latimer Underground Station,51.667985,-0.560689
+metropolitan,4,1,Amersham Underground Station,51.674126,-0.607714
+metropolitan,5,0,Amersham Underground Station,51.674126,-0.607714
+metropolitan,5,1,Chalfont & Latimer Underground Station,51.667985,-0.560689
+metropolitan,6,0,Chalfont & Latimer Underground Station,51.667985,-0.560689
+metropolitan,6,1,Chorleywood Underground Station,51.654358,-0.518461
+metropolitan,6,2,Rickmansworth Underground Station,51.640207,-0.473703
+metropolitan,6,3,Moor Park Underground Station,51.629845,-0.432454
+metropolitan,7,0,Moor Park Underground Station,51.629845,-0.432454
+metropolitan,7,1,Northwood Underground Station,51.611053,-0.423829
+metropolitan,7,2,Northwood Hills Underground Station,51.600572,-0.409464
+metropolitan,7,3,Pinner Underground Station,51.592901,-0.381161
+metropolitan,7,4,North Harrow Underground Station,51.584872,-0.362408
+metropolitan,7,5,Harrow-on-the-Hill Underground Station,51.579195,-0.337225
+metropolitan,8,0,Harrow-on-the-Hill Underground Station,51.579195,-0.337225
+metropolitan,8,1,Northwick Park Underground Station,51.578481,-0.318056
+metropolitan,8,2,Preston Road Underground Station,51.571972,-0.295107
+metropolitan,8,3,Wembley Park Underground Station,51.563198,-0.279262
+metropolitan,9,0,Wembley Park Underground Station,51.563198,-0.279262
+metropolitan,9,1,Finchley Road Underground Station,51.546825,-0.179845
+metropolitan,9,2,Baker Street Underground Station,51.522883,-0.15713
+metropolitan,9,3,Great Portland Street Underground Station,51.52384,-0.144262
+metropolitan,9,4,Euston Square Underground Station,51.525604,-0.135829
+metropolitan,9,5,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+metropolitan,9,6,Farringdon Underground Station,51.520252,-0.104913
+metropolitan,9,7,Barbican Underground Station,51.520275,-0.097993
+metropolitan,9,8,Moorgate Underground Station,51.518176,-0.088322
+metropolitan,9,9,Liverpool Street Underground Station,51.517372,-0.083182
+metropolitan,9,10,Aldgate Underground Station,51.514246,-0.075689
+metropolitan,10,0,Chesham Underground Station,51.705208,-0.611247
+metropolitan,10,1,Chalfont & Latimer Underground Station,51.667985,-0.560689
+metropolitan,11,0,Harrow-on-the-Hill Underground Station,51.579195,-0.337225
+metropolitan,11,1,West Harrow Underground Station,51.57971,-0.3534
+metropolitan,11,2,Rayners Lane Underground Station,51.575147,-0.371127
+metropolitan,11,3,Eastcote Underground Station,51.576506,-0.397373
+metropolitan,11,4,Ruislip Manor Underground Station,51.573202,-0.412973
+metropolitan,11,5,Ruislip Underground Station,51.571354,-0.421898
+metropolitan,11,6,Ickenham Underground Station,51.561992,-0.442001
+metropolitan,11,7,Hillingdon Underground Station,51.553715,-0.449828
+metropolitan,11,8,Uxbridge Underground Station,51.546565,-0.477949
+metropolitan,12,0,Uxbridge Underground Station,51.546565,-0.477949
+metropolitan,12,1,Hillingdon Underground Station,51.553715,-0.449828
+metropolitan,12,2,Ickenham Underground Station,51.561992,-0.442001
+metropolitan,12,3,Ruislip Underground Station,51.571354,-0.421898
+metropolitan,12,4,Ruislip Manor Underground Station,51.573202,-0.412973
+metropolitan,12,5,Eastcote Underground Station,51.576506,-0.397373
+metropolitan,12,6,Rayners Lane Underground Station,51.575147,-0.371127
+metropolitan,12,7,West Harrow Underground Station,51.57971,-0.3534
+metropolitan,12,8,Harrow-on-the-Hill Underground Station,51.579195,-0.337225
+metropolitan,13,0,Moor Park Underground Station,51.629845,-0.432454
+metropolitan,13,1,Croxley Underground Station,51.647044,-0.441718
+metropolitan,13,2,Watford Underground Station,51.657446,-0.417377
+metropolitan,14,0,Watford Underground Station,51.657446,-0.417377
+metropolitan,14,1,Croxley Underground Station,51.647044,-0.441718
+metropolitan,14,2,Moor Park Underground Station,51.629845,-0.432454
+northern,0,0,High Barnet Underground Station,51.650541,-0.194298
+northern,0,1,Totteridge & Whetstone Underground Station,51.630597,-0.17921
+northern,0,2,Woodside Park Underground Station,51.618014,-0.18542
+northern,0,3,West Finchley Underground Station,51.609426,-0.188362
+northern,0,4,Finchley Central Underground Station,51.600921,-0.192527
+northern,1,0,Finchley Central Underground Station,51.600921,-0.192527
+northern,1,1,East Finchley Underground Station,51.587131,-0.165012
+northern,1,2,Highgate Underground Station,51.577532,-0.145857
+northern,1,3,Archway Underground Station,51.565478,-0.134819
+northern,1,4,Tufnell Park Underground Station,51.556822,-0.138433
+northern,1,5,Kentish Town Underground Station,51.550312,-0.140733
+northern,1,6,Camden Town Underground Station,51.539292,-0.14274
+northern,2,0,Camden Town Underground Station,51.539292,-0.14274
+northern,2,1,Mornington Crescent Underground Station,51.534679,-0.138789
+northern,2,2,Euston Underground Station,51.528055,-0.132182
+northern,3,0,Euston Underground Station,51.528055,-0.132182
+northern,3,1,Warren Street Underground Station,51.524951,-0.138321
+northern,3,2,Goodge Street Underground Station,51.520599,-0.134361
+northern,3,3,Tottenham Court Road Underground Station,51.516426,-0.13041
+northern,3,4,Leicester Square Underground Station,51.511386,-0.128426
+northern,3,5,Charing Cross Underground Station,51.50741,-0.127277
+northern,3,6,Embankment Underground Station,51.507058,-0.122666
+northern,3,7,Waterloo Underground Station,51.503299,-0.11478
+northern,3,8,Kennington Underground Station,51.488337,-0.105963
+northern,4,0,Kennington Underground Station,51.488337,-0.105963
+northern,4,1,Oval Underground Station,51.48185,-0.112439
+northern,4,2,Stockwell Underground Station,51.472184,-0.122644
+northern,4,3,Clapham North Underground Station,51.465135,-0.130016
+northern,4,4,Clapham Common Underground Station,51.461742,-0.138317
+northern,4,5,Clapham South Underground Station,51.452654,-0.147582
+northern,4,6,Balham Underground Station,51.443288,-0.152997
+northern,4,7,Tooting Bec Underground Station,51.435678,-0.159736
+northern,4,8,Tooting Broadway Underground Station,51.42763,-0.168374
+northern,4,9,Colliers Wood Underground Station,51.41816,-0.178086
+northern,4,10,South Wimbledon Underground Station,51.415309,-0.192005
+northern,4,11,Morden Underground Station,51.402142,-0.194839
+northern,5,0,Camden Town Underground Station,51.539292,-0.14274
+northern,5,1,Euston Underground Station,51.528055,-0.132182
+northern,6,0,Euston Underground Station,51.528055,-0.132182
+northern,6,1,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+northern,6,2,Angel Underground Station,51.532624,-0.105898
+northern,6,3,Old Street Underground Station,51.525864,-0.08777
+northern,6,4,Moorgate Underground Station,51.518176,-0.088322
+northern,6,5,Bank Underground Station,51.513132,-0.090047
+northern,6,6,London Bridge Underground Station,51.505721,-0.088873
+northern,6,7,Borough Underground Station,51.501199,-0.09337
+northern,6,8,Elephant & Castle Underground Station,51.494536,-0.100606
+northern,6,9,Kennington Underground Station,51.488337,-0.105963
+northern,7,0,Morden Underground Station,51.402142,-0.194839
+northern,7,1,South Wimbledon Underground Station,51.415309,-0.192005
+northern,7,2,Colliers Wood Underground Station,51.41816,-0.178086
+northern,7,3,Tooting Broadway Underground Station,51.42763,-0.168374
+northern,7,4,Tooting Bec Underground Station,51.435678,-0.159736
+northern,7,5,Balham Underground Station,51.443288,-0.152997
+northern,7,6,Clapham South Underground Station,51.452654,-0.147582
+northern,7,7,Clapham Common Underground Station,51.461742,-0.138317
+northern,7,8,Clapham North Underground Station,51.465135,-0.130016
+northern,7,9,Stockwell Underground Station,51.472184,-0.122644
+northern,7,10,Oval Underground Station,51.48185,-0.112439
+northern,7,11,Kennington Underground Station,51.488337,-0.105963
+northern,8,0,Kennington Underground Station,51.488337,-0.105963
+northern,8,1,Waterloo Underground Station,51.503299,-0.11478
+northern,8,2,Embankment Underground Station,51.507058,-0.122666
+northern,8,3,Charing Cross Underground Station,51.50741,-0.127277
+northern,8,4,Leicester Square Underground Station,51.511386,-0.128426
+northern,8,5,Tottenham Court Road Underground Station,51.516426,-0.13041
+northern,8,6,Goodge Street Underground Station,51.520599,-0.134361
+northern,8,7,Warren Street Underground Station,51.524951,-0.138321
+northern,8,8,Euston Underground Station,51.528055,-0.132182
+northern,9,0,Euston Underground Station,51.528055,-0.132182
+northern,9,1,Mornington Crescent Underground Station,51.534679,-0.138789
+northern,9,2,Camden Town Underground Station,51.539292,-0.14274
+northern,10,0,Camden Town Underground Station,51.539292,-0.14274
+northern,10,1,Kentish Town Underground Station,51.550312,-0.140733
+northern,10,2,Tufnell Park Underground Station,51.556822,-0.138433
+northern,10,3,Archway Underground Station,51.565478,-0.134819
+northern,10,4,Highgate Underground Station,51.577532,-0.145857
+northern,10,5,East Finchley Underground Station,51.587131,-0.165012
+northern,10,6,Finchley Central Underground Station,51.600921,-0.192527
+northern,11,0,Finchley Central Underground Station,51.600921,-0.192527
+northern,11,1,West Finchley Underground Station,51.609426,-0.188362
+northern,11,2,Woodside Park Underground Station,51.618014,-0.18542
+northern,11,3,Totteridge & Whetstone Underground Station,51.630597,-0.17921
+northern,11,4,High Barnet Underground Station,51.650541,-0.194298
+northern,12,0,Kennington Underground Station,51.488337,-0.105963
+northern,12,1,Elephant & Castle Underground Station,51.494536,-0.100606
+northern,12,2,Borough Underground Station,51.501199,-0.09337
+northern,12,3,London Bridge Underground Station,51.505721,-0.088873
+northern,12,4,Bank Underground Station,51.513132,-0.090047
+northern,12,5,Moorgate Underground Station,51.518176,-0.088322
+northern,12,6,Old Street Underground Station,51.525864,-0.08777
+northern,12,7,Angel Underground Station,51.532624,-0.105898
+northern,12,8,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+northern,12,9,Euston Underground Station,51.528055,-0.132182
+northern,13,0,Euston Underground Station,51.528055,-0.132182
+northern,13,1,Camden Town Underground Station,51.539292,-0.14274
+northern,14,0,Edgware Underground Station,51.613653,-0.274928
+northern,14,1,Burnt Oak Underground Station,51.602774,-0.264048
+northern,14,2,Colindale Underground Station,51.595424,-0.249919
+northern,14,3,Hendon Central Underground Station,51.583301,-0.226424
+northern,14,4,Brent Cross Underground Station,51.57665,-0.213622
+northern,14,5,Golders Green Underground Station,51.572259,-0.194039
+northern,14,6,Hampstead Underground Station,51.556239,-0.177464
+northern,14,7,Belsize Park Underground Station,51.550529,-0.164783
+northern,14,8,Chalk Farm Underground Station,51.544118,-0.153388
+northern,14,9,Camden Town Underground Station,51.539292,-0.14274
+northern,15,0,Camden Town Underground Station,51.539292,-0.14274
+northern,15,1,Chalk Farm Underground Station,51.544118,-0.153388
+northern,15,2,Belsize Park Underground Station,51.550529,-0.164783
+northern,15,3,Hampstead Underground Station,51.556239,-0.177464
+northern,15,4,Golders Green Underground Station,51.572259,-0.194039
+northern,15,5,Brent Cross Underground Station,51.57665,-0.213622
+northern,15,6,Hendon Central Underground Station,51.583301,-0.226424
+northern,15,7,Colindale Underground Station,51.595424,-0.249919
+northern,15,8,Burnt Oak Underground Station,51.602774,-0.264048
+northern,15,9,Edgware Underground Station,51.613653,-0.274928
+northern,16,0,Mill Hill East Underground Station,51.608229,-0.209986
+northern,16,1,Finchley Central Underground Station,51.600921,-0.192527
+northern,17,0,Finchley Central Underground Station,51.600921,-0.192527
+northern,17,1,Mill Hill East Underground Station,51.608229,-0.209986
+northern,18,0,Kennington Underground Station,51.488337,-0.105963
+northern,18,1,Nine Elms Underground Station,51.479912,-0.128476
+northern,18,2,Battersea Power Station Underground Station,51.479932,-0.142142
+northern,19,0,Battersea Power Station Underground Station,51.479932,-0.142142
+northern,19,1,Nine Elms Underground Station,51.479912,-0.128476
+northern,19,2,Kennington Underground Station,51.488337,-0.105963
+piccadilly,0,0,Cockfosters Underground Station,51.65152,-0.149171
+piccadilly,0,1,Oakwood Underground Station,51.647726,-0.132182
+piccadilly,0,2,Southgate Underground Station,51.632315,-0.127816
+piccadilly,0,3,Arnos Grove Underground Station,51.616446,-0.133062
+piccadilly,0,4,Bounds Green Underground Station,51.607034,-0.124235
+piccadilly,0,5,Wood Green Underground Station,51.597479,-0.109886
+piccadilly,0,6,Turnpike Lane Underground Station,51.590272,-0.102953
+piccadilly,0,7,Manor House Underground Station,51.570738,-0.096118
+piccadilly,0,8,Finsbury Park Underground Station,51.564158,-0.106825
+piccadilly,0,9,Arsenal Underground Station,51.558655,-0.107457
+piccadilly,0,10,Holloway Road Underground Station,51.552697,-0.113244
+piccadilly,0,11,Caledonian Road Underground Station,51.548519,-0.118493
+piccadilly,0,12,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+piccadilly,0,13,Russell Square Underground Station,51.523073,-0.124285
+piccadilly,0,14,Holborn Underground Station,51.51758,-0.120475
+piccadilly,0,15,Covent Garden Underground Station,51.513093,-0.124436
+piccadilly,0,16,Leicester Square Underground Station,51.511386,-0.128426
+piccadilly,0,17,Piccadilly Circus Underground Station,51.51005,-0.133798
+piccadilly,0,18,Green Park Underground Station,51.506947,-0.142787
+piccadilly,0,19,Hyde Park Corner Underground Station,51.503035,-0.152441
+piccadilly,0,20,Knightsbridge Underground Station,51.501669,-0.160508
+piccadilly,0,21,South Kensington Underground Station,51.494094,-0.174138
+piccadilly,0,22,Gloucester Road Underground Station,51.494316,-0.182658
+piccadilly,0,23,Earl's Court Underground Station,51.492063,-0.193378
+piccadilly,0,24,Barons Court Underground Station,51.490311,-0.213427
+piccadilly,0,25,Hammersmith (Dist&Picc Line) Underground Station,51.4923,-0.22362
+piccadilly,0,26,Turnham Green Underground Station,51.495148,-0.254555
+piccadilly,0,27,Acton Town Underground Station,51.503057,-0.280462
+piccadilly,1,0,Acton Town Underground Station,51.503057,-0.280462
+piccadilly,1,1,Ealing Common Underground Station,51.51014,-0.288265
+piccadilly,1,2,North Ealing Underground Station,51.517505,-0.288868
+piccadilly,1,3,Park Royal Underground Station,51.527123,-0.284341
+piccadilly,1,4,Alperton Underground Station,51.540627,-0.29961
+piccadilly,1,5,Sudbury Town Underground Station,51.550815,-0.315745
+piccadilly,1,6,Sudbury Hill Underground Station,51.556946,-0.336435
+piccadilly,1,7,South Harrow Underground Station,51.564888,-0.352492
+piccadilly,1,8,Rayners Lane Underground Station,51.575147,-0.371127
+piccadilly,1,9,Eastcote Underground Station,51.576506,-0.397373
+piccadilly,1,10,Ruislip Manor Underground Station,51.573202,-0.412973
+piccadilly,1,11,Ruislip Underground Station,51.571354,-0.421898
+piccadilly,1,12,Ickenham Underground Station,51.561992,-0.442001
+piccadilly,1,13,Hillingdon Underground Station,51.553715,-0.449828
+piccadilly,1,14,Uxbridge Underground Station,51.546565,-0.477949
+piccadilly,2,0,Uxbridge Underground Station,51.546565,-0.477949
+piccadilly,2,1,Hillingdon Underground Station,51.553715,-0.449828
+piccadilly,2,2,Ickenham Underground Station,51.561992,-0.442001
+piccadilly,2,3,Ruislip Underground Station,51.571354,-0.421898
+piccadilly,2,4,Ruislip Manor Underground Station,51.573202,-0.412973
+piccadilly,2,5,Eastcote Underground Station,51.576506,-0.397373
+piccadilly,2,6,Rayners Lane Underground Station,51.575147,-0.371127
+piccadilly,2,7,South Harrow Underground Station,51.564888,-0.352492
+piccadilly,2,8,Sudbury Hill Underground Station,51.556946,-0.336435
+piccadilly,2,9,Sudbury Town Underground Station,51.550815,-0.315745
+piccadilly,2,10,Alperton Underground Station,51.540627,-0.29961
+piccadilly,2,11,Park Royal Underground Station,51.527123,-0.284341
+piccadilly,2,12,North Ealing Underground Station,51.517505,-0.288868
+piccadilly,2,13,Ealing Common Underground Station,51.51014,-0.288265
+piccadilly,2,14,Acton Town Underground Station,51.503057,-0.280462
+piccadilly,3,0,Acton Town Underground Station,51.503057,-0.280462
+piccadilly,3,1,Turnham Green Underground Station,51.495148,-0.254555
+piccadilly,3,2,Hammersmith (Dist&Picc Line) Underground Station,51.4923,-0.22362
+piccadilly,3,3,Barons Court Underground Station,51.490311,-0.213427
+piccadilly,3,4,Earl's Court Underground Station,51.492063,-0.193378
+piccadilly,3,5,Gloucester Road Underground Station,51.494316,-0.182658
+piccadilly,3,6,South Kensington Underground Station,51.494094,-0.174138
+piccadilly,3,7,Knightsbridge Underground Station,51.501669,-0.160508
+piccadilly,3,8,Hyde Park Corner Underground Station,51.503035,-0.152441
+piccadilly,3,9,Green Park Underground Station,51.506947,-0.142787
+piccadilly,3,10,Piccadilly Circus Underground Station,51.51005,-0.133798
+piccadilly,3,11,Leicester Square Underground Station,51.511386,-0.128426
+piccadilly,3,12,Covent Garden Underground Station,51.513093,-0.124436
+piccadilly,3,13,Holborn Underground Station,51.51758,-0.120475
+piccadilly,3,14,Russell Square Underground Station,51.523073,-0.124285
+piccadilly,3,15,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+piccadilly,3,16,Caledonian Road Underground Station,51.548519,-0.118493
+piccadilly,3,17,Holloway Road Underground Station,51.552697,-0.113244
+piccadilly,3,18,Arsenal Underground Station,51.558655,-0.107457
+piccadilly,3,19,Finsbury Park Underground Station,51.564158,-0.106825
+piccadilly,3,20,Manor House Underground Station,51.570738,-0.096118
+piccadilly,3,21,Turnpike Lane Underground Station,51.590272,-0.102953
+piccadilly,3,22,Wood Green Underground Station,51.597479,-0.109886
+piccadilly,3,23,Bounds Green Underground Station,51.607034,-0.124235
+piccadilly,3,24,Arnos Grove Underground Station,51.616446,-0.133062
+piccadilly,3,25,Southgate Underground Station,51.632315,-0.127816
+piccadilly,3,26,Oakwood Underground Station,51.647726,-0.132182
+piccadilly,3,27,Cockfosters Underground Station,51.65152,-0.149171
+piccadilly,4,0,Acton Town Underground Station,51.503057,-0.280462
+piccadilly,4,1,South Ealing Underground Station,51.501003,-0.307424
+piccadilly,4,2,Northfields Underground Station,51.499319,-0.314719
+piccadilly,4,3,Boston Manor Underground Station,51.495635,-0.324939
+piccadilly,4,4,Osterley Underground Station,51.481274,-0.352224
+piccadilly,4,5,Hounslow East Underground Station,51.473213,-0.356474
+piccadilly,4,6,Hounslow Central Underground Station,51.471295,-0.366578
+piccadilly,4,7,Hounslow West Underground Station,51.473469,-0.386544
+piccadilly,4,8,Hatton Cross Underground Station,51.466747,-0.423191
+piccadilly,5,0,Hatton Cross Underground Station,51.466747,-0.423191
+piccadilly,5,1,Heathrow Terminals 2 & 3 Underground Station,51.471235,-0.452265
+piccadilly,5,2,Heathrow Terminal 5 Underground Station,51.470052,-0.49056
+piccadilly,6,0,Heathrow Terminal 4 Underground Station,51.458524,-0.445771
+piccadilly,6,1,Heathrow Terminals 2 & 3 Underground Station,51.471235,-0.452265
+piccadilly,7,0,Heathrow Terminals 2 & 3 Underground Station,51.471235,-0.452265
+piccadilly,7,1,Hatton Cross Underground Station,51.466747,-0.423191
+piccadilly,7,2,Hounslow West Underground Station,51.473469,-0.386544
+piccadilly,7,3,Hounslow Central Underground Station,51.471295,-0.366578
+piccadilly,7,4,Hounslow East Underground Station,51.473213,-0.356474
+piccadilly,7,5,Osterley Underground Station,51.481274,-0.352224
+piccadilly,7,6,Boston Manor Underground Station,51.495635,-0.324939
+piccadilly,7,7,Northfields Underground Station,51.499319,-0.314719
+piccadilly,7,8,South Ealing Underground Station,51.501003,-0.307424
+piccadilly,7,9,Acton Town Underground Station,51.503057,-0.280462
+piccadilly,8,0,Heathrow Terminal 5 Underground Station,51.470052,-0.49056
+piccadilly,8,1,Heathrow Terminals 2 & 3 Underground Station,51.471235,-0.452265
+piccadilly,9,0,Hatton Cross Underground Station,51.466747,-0.423191
+piccadilly,9,1,Heathrow Terminal 4 Underground Station,51.458524,-0.445771
+victoria,0,0,Walthamstow Central Underground Station,51.582965,-0.019885
+victoria,0,1,Blackhorse Road Underground Station,51.586919,-0.04115
+victoria,0,2,Tottenham Hale Underground Station,51.588108,-0.060241
+victoria,0,3,Seven Sisters Underground Station,51.58333,-0.072584
+victoria,0,4,Finsbury Park Underground Station,51.564158,-0.106825
+victoria,0,5,Highbury & Islington Underground Station,51.54635,-0.103324
+victoria,0,6,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+victoria,0,7,Euston Underground Station,51.528055,-0.132182
+victoria,0,8,Warren Street Underground Station,51.524951,-0.138321
+victoria,0,9,Oxford Circus Underground Station,51.515224,-0.141903
+victoria,0,10,Green Park Underground Station,51.506947,-0.142787
+victoria,0,11,Victoria Underground Station,51.496359,-0.143102
+victoria,0,12,Pimlico Underground Station,51.489097,-0.133761
+victoria,0,13,Vauxhall Underground Station,51.485743,-0.124204
+victoria,0,14,Stockwell Underground Station,51.472184,-0.122644
+victoria,0,15,Brixton Underground Station,51.462618,-0.114888
+victoria,1,0,Brixton Underground Station,51.462618,-0.114888
+victoria,1,1,Stockwell Underground Station,51.472184,-0.122644
+victoria,1,2,Vauxhall Underground Station,51.485743,-0.124204
+victoria,1,3,Pimlico Underground Station,51.489097,-0.133761
+victoria,1,4,Victoria Underground Station,51.496359,-0.143102
+victoria,1,5,Green Park Underground Station,51.506947,-0.142787
+victoria,1,6,Oxford Circus Underground Station,51.515224,-0.141903
+victoria,1,7,Warren Street Underground Station,51.524951,-0.138321
+victoria,1,8,Euston Underground Station,51.528055,-0.132182
+victoria,1,9,King's Cross St. Pancras Underground Station,51.530663,-0.123194
+victoria,1,10,Highbury & Islington Underground Station,51.54635,-0.103324
+victoria,1,11,Finsbury Park Underground Station,51.564158,-0.106825
+victoria,1,12,Seven Sisters Underground Station,51.58333,-0.072584
+victoria,1,13,Tottenham Hale Underground Station,51.588108,-0.060241
+victoria,1,14,Blackhorse Road Underground Station,51.586919,-0.04115
+victoria,1,15,Walthamstow Central Underground Station,51.582965,-0.019885
+waterloo-city,0,0,Bank Underground Station,51.513132,-0.090047
+waterloo-city,0,1,Waterloo Underground Station,51.503299,-0.11478
+waterloo-city,1,0,Waterloo Underground Station,51.503299,-0.11478
+waterloo-city,1,1,Bank Underground Station,51.513132,-0.090047
