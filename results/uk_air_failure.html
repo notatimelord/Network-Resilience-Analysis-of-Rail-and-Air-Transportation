@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0bc1c7d60fde31cd888ca05855fbd7e6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <script>window.FAILURE_DATA = {"London": {"degree": 8, "betweenness": 0.1, "closeness": 0.611, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.126, "avg_path_delta": 0.074, "affected_routes": [{"from": "Manchester", "to": "Edinburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Manchester", "London", "Edinburgh"], "new_path": ["Manchester", "Belfast", "Edinburgh"], "replacement": ["Belfast"]}, {"from": "Manchester", "to": "Glasgow", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Manchester", "London", "Glasgow"], "new_path": ["Manchester", "Belfast", "Glasgow"], "replacement": ["Belfast"]}, {"from": "Manchester", "to": "Dundee", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Manchester", "London", "Dundee"], "new_path": ["Manchester", "Aberdeen", "Kirkwall", "Dundee"], "replacement": ["Aberdeen", "Kirkwall"]}, {"from": "Manchester", "to": "Bournemouth", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Manchester", "London", "Edinburgh", "Bournemouth"], "new_path": ["Manchester", "Belfast", "Edinburgh", "Bournemouth"], "replacement": ["Belfast", "Edinburgh"]}, {"from": "Manchester", "to": "Benbecula", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Manchester", "London", "Glasgow", "Benbecula"], "new_path": ["Manchester", "Belfast", "Glasgow", "Benbecula"], "replacement": ["Belfast", "Glasgow"]}, {"from": "Edinburgh", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Edinburgh", "London", "Manchester"], "new_path": ["Edinburgh", "Belfast", "Manchester"], "replacement": ["Belfast"]}, {"from": "Edinburgh", "to": "Glasgow", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Edinburgh", "London", "Glasgow"], "new_path": ["Edinburgh", "Birmingham", "Glasgow"], "replacement": ["Birmingham"]}, {"from": "Edinburgh", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Edinburgh", "London", "Aberdeen"], "new_path": ["Edinburgh", "Birmingham", "Aberdeen"], "replacement": ["Birmingham"]}, {"from": "Edinburgh", "to": "Dundee", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Edinburgh", "London", "Dundee"], "new_path": ["Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Kirkwall"]}, {"from": "Edinburgh", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Edinburgh", "London", "Inverness"], "new_path": ["Edinburgh", "Bristol", "Inverness"], "replacement": ["Bristol"]}, {"from": "Edinburgh", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Edinburgh", "London", "Aberdeen", "Norwich"], "new_path": ["Edinburgh", "Birmingham", "Aberdeen", "Norwich"], "replacement": ["Birmingham", "Aberdeen"]}, {"from": "Edinburgh", "to": "Benbecula", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Edinburgh", "London", "Glasgow", "Benbecula"], "new_path": ["Edinburgh", "Birmingham", "Glasgow", "Benbecula"], "replacement": ["Birmingham", "Glasgow"]}, {"from": "Glasgow", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Glasgow", "London", "Manchester"], "new_path": ["Glasgow", "Belfast", "Manchester"], "replacement": ["Belfast"]}, {"from": "Glasgow", "to": "Edinburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Glasgow", "London", "Edinburgh"], "new_path": ["Glasgow", "Birmingham", "Edinburgh"], "replacement": ["Birmingham"]}, {"from": "Glasgow", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Glasgow", "London", "Aberdeen"], "new_path": ["Glasgow", "Birmingham", "Aberdeen"], "replacement": ["Birmingham"]}, {"from": "Glasgow", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Glasgow", "London", "Manchester", "Exeter"], "new_path": ["Glasgow", "Birmingham", "Edinburgh", "Exeter"], "replacement": ["Birmingham", "Edinburgh"]}, {"from": "Glasgow", "to": "Dundee", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Glasgow", "London", "Dundee"], "new_path": ["Glasgow", "Kirkwall", "Dundee"], "replacement": ["Kirkwall"]}, {"from": "Glasgow", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Glasgow", "London", "Inverness"], "new_path": ["Glasgow", "Bristol", "Inverness"], "replacement": ["Bristol"]}, {"from": "Glasgow", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Glasgow", "London", "Aberdeen", "Norwich"], "new_path": ["Glasgow", "Birmingham", "Aberdeen", "Norwich"], "replacement": ["Birmingham", "Aberdeen"]}, {"from": "Glasgow", "to": "Bournemouth", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Glasgow", "London", "Edinburgh", "Bournemouth"], "new_path": ["Glasgow", "Birmingham", "Edinburgh", "Bournemouth"], "replacement": ["Birmingham", "Edinburgh"]}, {"from": "Glasgow", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Glasgow", "London", "Newquay"], "new_path": ["Glasgow", "Birmingham", "Edinburgh", "Newquay"], "replacement": ["Birmingham", "Edinburgh"]}, {"from": "Birmingham", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Birmingham", "Edinburgh", "London", "Dundee"], "new_path": ["Birmingham", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Edinburgh", "Kirkwall"]}, {"from": "Bristol", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Bristol", "Edinburgh", "London", "Dundee"], "new_path": ["Bristol", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Edinburgh", "Kirkwall"]}, {"from": "Liverpool", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Liverpool", "Glasgow", "London", "Dundee"], "new_path": ["Liverpool", "Glasgow", "Kirkwall", "Dundee"], "replacement": ["Glasgow", "Kirkwall"]}, {"from": "Liverpool", "to": "Newquay", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Liverpool", "Glasgow", "London", "Newquay"], "new_path": ["Liverpool", "Belfast", "Manchester", "Newquay"], "replacement": ["Belfast", "Manchester"]}, {"from": "Newcastle", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Newcastle", "Belfast", "London", "Dundee"], "new_path": ["Newcastle", "Birmingham", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Birmingham", "Edinburgh", "Kirkwall"]}, {"from": "Belfast", "to": "Dundee", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Belfast", "London", "Dundee"], "new_path": ["Belfast", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Edinburgh", "Kirkwall"]}, {"from": "Belfast", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Belfast", "London", "Newquay"], "new_path": ["Belfast", "Manchester", "Newquay"], "replacement": ["Manchester"]}, {"from": "Leeds", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Leeds", "Belfast", "London", "Dundee"], "new_path": ["Leeds", "Belfast", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Belfast", "Edinburgh", "Kirkwall"]}, {"from": "Leeds", "to": "Newquay", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Leeds", "Belfast", "London", "Newquay"], "new_path": ["Leeds", "Belfast", "Manchester", "Newquay"], "replacement": ["Belfast", "Manchester"]}, {"from": "Cardiff", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Cardiff", "Belfast", "London", "Dundee"], "new_path": ["Cardiff", "Belfast", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Belfast", "Edinburgh", "Kirkwall"]}, {"from": "Cardiff", "to": "Newquay", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Cardiff", "Belfast", "London", "Newquay"], "new_path": ["Cardiff", "Belfast", "Manchester", "Newquay"], "replacement": ["Belfast", "Manchester"]}, {"from": "Aberdeen", "to": "Edinburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Aberdeen", "London", "Edinburgh"], "new_path": ["Aberdeen", "Birmingham", "Edinburgh"], "replacement": ["Birmingham"]}, {"from": "Aberdeen", "to": "Glasgow", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Aberdeen", "London", "Glasgow"], "new_path": ["Aberdeen", "Birmingham", "Glasgow"], "replacement": ["Birmingham"]}, {"from": "Aberdeen", "to": "Dundee", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Aberdeen", "London", "Dundee"], "new_path": ["Aberdeen", "Kirkwall", "Dundee"], "replacement": ["Kirkwall"]}, {"from": "Aberdeen", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Aberdeen", "London", "Inverness"], "new_path": ["Aberdeen", "Manchester", "Inverness"], "replacement": ["Manchester"]}, {"from": "Aberdeen", "to": "Bournemouth", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Aberdeen", "London", "Edinburgh", "Bournemouth"], "new_path": ["Aberdeen", "Birmingham", "Edinburgh", "Bournemouth"], "replacement": ["Birmingham", "Edinburgh"]}, {"from": "Aberdeen", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Aberdeen", "London", "Newquay"], "new_path": ["Aberdeen", "Manchester", "Newquay"], "replacement": ["Manchester"]}, {"from": "Aberdeen", "to": "Stornoway", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Aberdeen", "London", "Edinburgh", "Stornoway"], "new_path": ["Aberdeen", "Manchester", "Inverness", "Stornoway"], "replacement": ["Manchester", "Inverness"]}, {"from": "Aberdeen", "to": "Benbecula", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Aberdeen", "London", "Glasgow", "Benbecula"], "new_path": ["Aberdeen", "Birmingham", "Glasgow", "Benbecula"], "replacement": ["Birmingham", "Glasgow"]}, {"from": "Exeter", "to": "Glasgow", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Exeter", "Manchester", "London", "Glasgow"], "new_path": ["Exeter", "Manchester", "Belfast", "Glasgow"], "replacement": ["Manchester", "Belfast"]}, {"from": "Exeter", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Exeter", "Manchester", "London", "Dundee"], "new_path": ["Exeter", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Edinburgh", "Kirkwall"]}, {"from": "Exeter", "to": "Benbecula", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Exeter", "Manchester", "London", "Glasgow", "Benbecula"], "new_path": ["Exeter", "Manchester", "Belfast", "Glasgow", "Benbecula"], "replacement": ["Manchester", "Belfast", "Glasgow"]}, {"from": "Dundee", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Dundee", "London", "Manchester"], "new_path": ["Dundee", "Kirkwall", "Aberdeen", "Manchester"], "replacement": ["Kirkwall", "Aberdeen"]}, {"from": "Dundee", "to": "Edinburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Dundee", "London", "Edinburgh"], "new_path": ["Dundee", "Kirkwall", "Edinburgh"], "replacement": ["Kirkwall"]}, {"from": "Dundee", "to": "Glasgow", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Dundee", "London", "Glasgow"], "new_path": ["Dundee", "Kirkwall", "Glasgow"], "replacement": ["Kirkwall"]}, {"from": "Dundee", "to": "Birmingham", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Edinburgh", "Birmingham"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Birmingham"], "replacement": ["Kirkwall", "Edinburgh"]}, {"from": "Dundee", "to": "Bristol", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Edinburgh", "Bristol"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Bristol"], "replacement": ["Kirkwall", "Edinburgh"]}, {"from": "Dundee", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Glasgow", "Liverpool"], "new_path": ["Dundee", "Kirkwall", "Glasgow", "Liverpool"], "replacement": ["Kirkwall", "Glasgow"]}, {"from": "Dundee", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Dundee", "London", "Belfast", "Newcastle"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Birmingham", "Newcastle"], "replacement": ["Kirkwall", "Edinburgh", "Birmingham"]}, {"from": "Dundee", "to": "Belfast", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Dundee", "London", "Belfast"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Belfast"], "replacement": ["Kirkwall", "Edinburgh"]}, {"from": "Dundee", "to": "Leeds", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Dundee", "London", "Belfast", "Leeds"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Belfast", "Leeds"], "replacement": ["Kirkwall", "Edinburgh", "Belfast"]}, {"from": "Dundee", "to": "Cardiff", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Dundee", "London", "Belfast", "Cardiff"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Belfast", "Cardiff"], "replacement": ["Kirkwall", "Edinburgh", "Belfast"]}, {"from": "Dundee", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Dundee", "London", "Aberdeen"], "new_path": ["Dundee", "Kirkwall", "Aberdeen"], "replacement": ["Kirkwall"]}, {"from": "Dundee", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Manchester", "Exeter"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Exeter"], "replacement": ["Kirkwall", "Edinburgh"]}, {"from": "Dundee", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Dundee", "London", "Inverness"], "new_path": ["Dundee", "Kirkwall", "Inverness"], "replacement": ["Kirkwall"]}, {"from": "Dundee", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Aberdeen", "Norwich"], "new_path": ["Dundee", "Kirkwall", "Aberdeen", "Norwich"], "replacement": ["Kirkwall", "Aberdeen"]}, {"from": "Dundee", "to": "Southampton", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Manchester", "Southampton"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Southampton"], "replacement": ["Kirkwall", "Edinburgh"]}, {"from": "Dundee", "to": "Bournemouth", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Edinburgh", "Bournemouth"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Bournemouth"], "replacement": ["Kirkwall", "Edinburgh"]}, {"from": "Dundee", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Dundee", "London", "Newquay"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Newquay"], "replacement": ["Kirkwall", "Edinburgh"]}, {"from": "Dundee", "to": "Stornoway", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Edinburgh", "Stornoway"], "new_path": ["Dundee", "Kirkwall", "Edinburgh", "Stornoway"], "replacement": ["Kirkwall", "Edinburgh"]}, {"from": "Dundee", "to": "Benbecula", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Glasgow", "Benbecula"], "new_path": ["Dundee", "Kirkwall", "Glasgow", "Benbecula"], "replacement": ["Kirkwall", "Glasgow"]}, {"from": "Inverness", "to": "Edinburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Inverness", "London", "Edinburgh"], "new_path": ["Inverness", "Bristol", "Edinburgh"], "replacement": ["Bristol"]}, {"from": "Inverness", "to": "Glasgow", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Inverness", "London", "Glasgow"], "new_path": ["Inverness", "Bristol", "Glasgow"], "replacement": ["Bristol"]}, {"from": "Inverness", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Inverness", "London", "Aberdeen"], "new_path": ["Inverness", "Manchester", "Aberdeen"], "replacement": ["Manchester"]}, {"from": "Inverness", "to": "Dundee", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Inverness", "London", "Dundee"], "new_path": ["Inverness", "Kirkwall", "Dundee"], "replacement": ["Kirkwall"]}, {"from": "Inverness", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Inverness", "London", "Aberdeen", "Norwich"], "new_path": ["Inverness", "Manchester", "Aberdeen", "Norwich"], "replacement": ["Manchester", "Aberdeen"]}, {"from": "Inverness", "to": "Bournemouth", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Inverness", "London", "Edinburgh", "Bournemouth"], "new_path": ["Inverness", "Bristol", "Edinburgh", "Bournemouth"], "replacement": ["Bristol", "Edinburgh"]}, {"from": "Inverness", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Inverness", "London", "Newquay"], "new_path": ["Inverness", "Manchester", "Newquay"], "replacement": ["Manchester"]}, {"from": "Inverness", "to": "Benbecula", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Inverness", "London", "Glasgow", "Benbecula"], "new_path": ["Inverness", "Bristol", "Glasgow", "Benbecula"], "replacement": ["Bristol", "Glasgow"]}, {"from": "Norwich", "to": "Edinburgh", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Norwich", "Aberdeen", "London", "Edinburgh"], "new_path": ["Norwich", "Aberdeen", "Birmingham", "Edinburgh"], "replacement": ["Aberdeen", "Birmingham"]}, {"from": "Norwich", "to": "Glasgow", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Norwich", "Aberdeen", "London", "Glasgow"], "new_path": ["Norwich", "Aberdeen", "Birmingham", "Glasgow"], "replacement": ["Aberdeen", "Birmingham"]}, {"from": "Norwich", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Norwich", "Aberdeen", "London", "Dundee"], "new_path": ["Norwich", "Aberdeen", "Kirkwall", "Dundee"], "replacement": ["Aberdeen", "Kirkwall"]}, {"from": "Norwich", "to": "Inverness", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Norwich", "Aberdeen", "London", "Inverness"], "new_path": ["Norwich", "Aberdeen", "Manchester", "Inverness"], "replacement": ["Aberdeen", "Manchester"]}, {"from": "Norwich", "to": "Bournemouth", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Norwich", "Aberdeen", "London", "Edinburgh", "Bournemouth"], "new_path": ["Norwich", "Aberdeen", "Birmingham", "Edinburgh", "Bournemouth"], "replacement": ["Aberdeen", "Birmingham", "Edinburgh"]}, {"from": "Norwich", "to": "Newquay", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Norwich", "Aberdeen", "London", "Newquay"], "new_path": ["Norwich", "Aberdeen", "Manchester", "Newquay"], "replacement": ["Aberdeen", "Manchester"]}, {"from": "Norwich", "to": "Stornoway", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Norwich", "Aberdeen", "London", "Edinburgh", "Stornoway"], "new_path": ["Norwich", "Aberdeen", "Manchester", "Inverness", "Stornoway"], "replacement": ["Aberdeen", "Manchester", "Inverness"]}, {"from": "Norwich", "to": "Benbecula", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Norwich", "Aberdeen", "London", "Glasgow", "Benbecula"], "new_path": ["Norwich", "Aberdeen", "Birmingham", "Glasgow", "Benbecula"], "replacement": ["Aberdeen", "Birmingham", "Glasgow"]}, {"from": "Southampton", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Southampton", "Manchester", "London", "Dundee"], "new_path": ["Southampton", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Edinburgh", "Kirkwall"]}, {"from": "Bournemouth", "to": "Manchester", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Bournemouth", "Edinburgh", "London", "Manchester"], "new_path": ["Bournemouth", "Edinburgh", "Belfast", "Manchester"], "replacement": ["Edinburgh", "Belfast"]}, {"from": "Bournemouth", "to": "Glasgow", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Bournemouth", "Edinburgh", "London", "Glasgow"], "new_path": ["Bournemouth", "Edinburgh", "Birmingham", "Glasgow"], "replacement": ["Edinburgh", "Birmingham"]}, {"from": "Bournemouth", "to": "Aberdeen", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Bournemouth", "Edinburgh", "London", "Aberdeen"], "new_path": ["Bournemouth", "Edinburgh", "Birmingham", "Aberdeen"], "replacement": ["Edinburgh", "Birmingham"]}, {"from": "Bournemouth", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Bournemouth", "Edinburgh", "London", "Dundee"], "new_path": ["Bournemouth", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Edinburgh", "Kirkwall"]}, {"from": "Bournemouth", "to": "Inverness", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Bournemouth", "Edinburgh", "London", "Inverness"], "new_path": ["Bournemouth", "Edinburgh", "Bristol", "Inverness"], "replacement": ["Edinburgh", "Bristol"]}, {"from": "Bournemouth", "to": "Norwich", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Bournemouth", "Edinburgh", "London", "Aberdeen", "Norwich"], "new_path": ["Bournemouth", "Edinburgh", "Birmingham", "Aberdeen", "Norwich"], "replacement": ["Edinburgh", "Birmingham", "Aberdeen"]}, {"from": "Bournemouth", "to": "Benbecula", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Bournemouth", "Edinburgh", "London", "Glasgow", "Benbecula"], "new_path": ["Bournemouth", "Edinburgh", "Birmingham", "Glasgow", "Benbecula"], "replacement": ["Edinburgh", "Birmingham", "Glasgow"]}, {"from": "Newquay", "to": "Glasgow", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newquay", "London", "Glasgow"], "new_path": ["Newquay", "Manchester", "Belfast", "Glasgow"], "replacement": ["Manchester", "Belfast"]}, {"from": "Newquay", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newquay", "London", "Glasgow", "Liverpool"], "new_path": ["Newquay", "Manchester", "Belfast", "Liverpool"], "replacement": ["Manchester", "Belfast"]}, {"from": "Newquay", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newquay", "London", "Belfast", "Newcastle"], "new_path": ["Newquay", "Manchester", "Belfast", "Newcastle"], "replacement": ["Manchester", "Belfast"]}, {"from": "Newquay", "to": "Belfast", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newquay", "London", "Belfast"], "new_path": ["Newquay", "Manchester", "Belfast"], "replacement": ["Manchester"]}, {"from": "Newquay", "to": "Leeds", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newquay", "London", "Belfast", "Leeds"], "new_path": ["Newquay", "Manchester", "Belfast", "Leeds"], "replacement": ["Manchester", "Belfast"]}, {"from": "Newquay", "to": "Cardiff", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newquay", "London", "Belfast", "Cardiff"], "new_path": ["Newquay", "Manchester", "Belfast", "Cardiff"], "replacement": ["Manchester", "Belfast"]}, {"from": "Newquay", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newquay", "London", "Aberdeen"], "new_path": ["Newquay", "Manchester", "Aberdeen"], "replacement": ["Manchester"]}, {"from": "Newquay", "to": "Dundee", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newquay", "London", "Dundee"], "new_path": ["Newquay", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Edinburgh", "Kirkwall"]}, {"from": "Newquay", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newquay", "London", "Inverness"], "new_path": ["Newquay", "Manchester", "Inverness"], "replacement": ["Manchester"]}, {"from": "Newquay", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newquay", "London", "Aberdeen", "Norwich"], "new_path": ["Newquay", "Manchester", "Aberdeen", "Norwich"], "replacement": ["Manchester", "Aberdeen"]}, {"from": "Newquay", "to": "Benbecula", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Newquay", "London", "Glasgow", "Benbecula"], "new_path": ["Newquay", "Manchester", "Belfast", "Glasgow", "Benbecula"], "replacement": ["Manchester", "Belfast", "Glasgow"]}, {"from": "Stornoway", "to": "Aberdeen", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "London", "Aberdeen"], "new_path": ["Stornoway", "Edinburgh", "Birmingham", "Aberdeen"], "replacement": ["Edinburgh", "Birmingham"]}, {"from": "Stornoway", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "London", "Dundee"], "new_path": ["Stornoway", "Edinburgh", "Kirkwall", "Dundee"], "replacement": ["Edinburgh", "Kirkwall"]}, {"from": "Stornoway", "to": "Norwich", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Stornoway", "Glasgow", "London", "Aberdeen", "Norwich"], "new_path": ["Stornoway", "Edinburgh", "Birmingham", "Aberdeen", "Norwich"], "replacement": ["Edinburgh", "Birmingham", "Aberdeen"]}, {"from": "Benbecula", "to": "Manchester", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Benbecula", "Glasgow", "London", "Manchester"], "new_path": ["Benbecula", "Glasgow", "Belfast", "Manchester"], "replacement": ["Glasgow", "Belfast"]}, {"from": "Benbecula", "to": "Edinburgh", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Benbecula", "Glasgow", "London", "Edinburgh"], "new_path": ["Benbecula", "Glasgow", "Birmingham", "Edinburgh"], "replacement": ["Glasgow", "Birmingham"]}, {"from": "Benbecula", "to": "Aberdeen", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Benbecula", "Glasgow", "London", "Aberdeen"], "new_path": ["Benbecula", "Glasgow", "Birmingham", "Aberdeen"], "replacement": ["Glasgow", "Birmingham"]}, {"from": "Benbecula", "to": "Exeter", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Benbecula", "Glasgow", "London", "Manchester", "Exeter"], "new_path": ["Benbecula", "Glasgow", "Birmingham", "Edinburgh", "Exeter"], "replacement": ["Glasgow", "Birmingham", "Edinburgh"]}, {"from": "Benbecula", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Benbecula", "Glasgow", "London", "Dundee"], "new_path": ["Benbecula", "Glasgow", "Kirkwall", "Dundee"], "replacement": ["Glasgow", "Kirkwall"]}, {"from": "Benbecula", "to": "Inverness", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Benbecula", "Glasgow", "London", "Inverness"], "new_path": ["Benbecula", "Glasgow", "Bristol", "Inverness"], "replacement": ["Glasgow", "Bristol"]}, {"from": "Benbecula", "to": "Norwich", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Benbecula", "Glasgow", "London", "Aberdeen", "Norwich"], "new_path": ["Benbecula", "Glasgow", "Birmingham", "Aberdeen", "Norwich"], "replacement": ["Glasgow", "Birmingham", "Aberdeen"]}, {"from": "Benbecula", "to": "Bournemouth", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Benbecula", "Glasgow", "London", "Edinburgh", "Bournemouth"], "new_path": ["Benbecula", "Glasgow", "Birmingham", "Edinburgh", "Bournemouth"], "replacement": ["Glasgow", "Birmingham", "Edinburgh"]}, {"from": "Benbecula", "to": "Newquay", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Benbecula", "Glasgow", "London", "Newquay"], "new_path": ["Benbecula", "Glasgow", "Birmingham", "Edinburgh", "Newquay"], "replacement": ["Glasgow", "Birmingham", "Edinburgh"]}]}, "Manchester": {"degree": 7, "betweenness": 0.054, "closeness": 0.564, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.091, "avg_path_delta": 0.04, "affected_routes": [{"from": "London", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["London", "Manchester", "Exeter"], "new_path": ["London", "Edinburgh", "Exeter"], "replacement": ["Edinburgh"]}, {"from": "London", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["London", "Manchester", "Southampton"], "new_path": ["London", "Edinburgh", "Southampton"], "replacement": ["Edinburgh"]}, {"from": "Glasgow", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Glasgow", "London", "Manchester", "Exeter"], "new_path": ["Glasgow", "London", "Edinburgh", "Exeter"], "replacement": ["London", "Edinburgh"]}, {"from": "Liverpool", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Liverpool", "Belfast", "Manchester", "Exeter"], "new_path": ["Liverpool", "Belfast", "Edinburgh", "Exeter"], "replacement": ["Belfast", "Edinburgh"]}, {"from": "Belfast", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Belfast", "Manchester", "Exeter"], "new_path": ["Belfast", "Edinburgh", "Exeter"], "replacement": ["Edinburgh"]}, {"from": "Leeds", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Leeds", "Belfast", "Manchester", "Exeter"], "new_path": ["Leeds", "Belfast", "Edinburgh", "Exeter"], "replacement": ["Belfast", "Edinburgh"]}, {"from": "Cardiff", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Cardiff", "Belfast", "Manchester", "Exeter"], "new_path": ["Cardiff", "Belfast", "Edinburgh", "Exeter"], "replacement": ["Belfast", "Edinburgh"]}, {"from": "Aberdeen", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Aberdeen", "Manchester", "Exeter"], "new_path": ["Aberdeen", "London", "Edinburgh", "Exeter"], "replacement": ["London", "Edinburgh"]}, {"from": "Aberdeen", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Aberdeen", "Manchester", "Southampton"], "new_path": ["Aberdeen", "Belfast", "Southampton"], "replacement": ["Belfast"]}, {"from": "Exeter", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Exeter", "Manchester", "London"], "new_path": ["Exeter", "Edinburgh", "London"], "replacement": ["Edinburgh"]}, {"from": "Exeter", "to": "Glasgow", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Exeter", "Manchester", "London", "Glasgow"], "new_path": ["Exeter", "Edinburgh", "London", "Glasgow"], "replacement": ["Edinburgh", "London"]}, {"from": "Exeter", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Exeter", "Manchester", "Belfast", "Liverpool"], "new_path": ["Exeter", "Edinburgh", "Belfast", "Liverpool"], "replacement": ["Edinburgh", "Belfast"]}, {"from": "Exeter", "to": "Belfast", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Exeter", "Manchester", "Belfast"], "new_path": ["Exeter", "Edinburgh", "Belfast"], "replacement": ["Edinburgh"]}, {"from": "Exeter", "to": "Leeds", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Exeter", "Manchester", "Belfast", "Leeds"], "new_path": ["Exeter", "Edinburgh", "Belfast", "Leeds"], "replacement": ["Edinburgh", "Belfast"]}, {"from": "Exeter", "to": "Cardiff", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Exeter", "Manchester", "Belfast", "Cardiff"], "new_path": ["Exeter", "Edinburgh", "Belfast", "Cardiff"], "replacement": ["Edinburgh", "Belfast"]}, {"from": "Exeter", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Exeter", "Manchester", "Aberdeen"], "new_path": ["Exeter", "Edinburgh", "London", "Aberdeen"], "replacement": ["Edinburgh", "London"]}, {"from": "Exeter", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Exeter", "Manchester", "London", "Dundee"], "new_path": ["Exeter", "Edinburgh", "London", "Dundee"], "replacement": ["Edinburgh", "London"]}, {"from": "Exeter", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Exeter", "Manchester", "Inverness"], "new_path": ["Exeter", "Edinburgh", "London", "Inverness"], "replacement": ["Edinburgh", "London"]}, {"from": "Exeter", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Exeter", "Manchester", "Aberdeen", "Norwich"], "new_path": ["Exeter", "Edinburgh", "London", "Aberdeen", "Norwich"], "replacement": ["Edinburgh", "London", "Aberdeen"]}, {"from": "Exeter", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Exeter", "Manchester", "Southampton"], "new_path": ["Exeter", "Edinburgh", "Southampton"], "replacement": ["Edinburgh"]}, {"from": "Exeter", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Exeter", "Manchester", "Newquay"], "new_path": ["Exeter", "Edinburgh", "Newquay"], "replacement": ["Edinburgh"]}, {"from": "Exeter", "to": "Benbecula", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Exeter", "Manchester", "London", "Glasgow", "Benbecula"], "new_path": ["Exeter", "Edinburgh", "London", "Glasgow", "Benbecula"], "replacement": ["Edinburgh", "London", "Glasgow"]}, {"from": "Dundee", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Manchester", "Exeter"], "new_path": ["Dundee", "London", "Edinburgh", "Exeter"], "replacement": ["London", "Edinburgh"]}, {"from": "Dundee", "to": "Southampton", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Manchester", "Southampton"], "new_path": ["Dundee", "London", "Edinburgh", "Southampton"], "replacement": ["London", "Edinburgh"]}, {"from": "Inverness", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Inverness", "Manchester", "Exeter"], "new_path": ["Inverness", "London", "Edinburgh", "Exeter"], "replacement": ["London", "Edinburgh"]}, {"from": "Inverness", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Inverness", "Manchester", "Southampton"], "new_path": ["Inverness", "Belfast", "Southampton"], "replacement": ["Belfast"]}, {"from": "Norwich", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Norwich", "Aberdeen", "Manchester", "Exeter"], "new_path": ["Norwich", "Aberdeen", "London", "Edinburgh", "Exeter"], "replacement": ["Aberdeen", "London", "Edinburgh"]}, {"from": "Norwich", "to": "Southampton", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Norwich", "Aberdeen", "Manchester", "Southampton"], "new_path": ["Norwich", "Aberdeen", "Belfast", "Southampton"], "replacement": ["Aberdeen", "Belfast"]}, {"from": "Southampton", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Manchester", "London"], "new_path": ["Southampton", "Edinburgh", "London"], "replacement": ["Edinburgh"]}, {"from": "Southampton", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Manchester", "Aberdeen"], "new_path": ["Southampton", "Belfast", "Aberdeen"], "replacement": ["Belfast"]}, {"from": "Southampton", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Manchester", "Exeter"], "new_path": ["Southampton", "Edinburgh", "Exeter"], "replacement": ["Edinburgh"]}, {"from": "Southampton", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Southampton", "Manchester", "London", "Dundee"], "new_path": ["Southampton", "Edinburgh", "London", "Dundee"], "replacement": ["Edinburgh", "London"]}, {"from": "Southampton", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Manchester", "Inverness"], "new_path": ["Southampton", "Belfast", "Inverness"], "replacement": ["Belfast"]}, {"from": "Southampton", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Southampton", "Manchester", "Aberdeen", "Norwich"], "new_path": ["Southampton", "Belfast", "Aberdeen", "Norwich"], "replacement": ["Belfast", "Aberdeen"]}, {"from": "Southampton", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Manchester", "Newquay"], "new_path": ["Southampton", "Edinburgh", "Newquay"], "replacement": ["Edinburgh"]}, {"from": "Newquay", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newquay", "Manchester", "Exeter"], "new_path": ["Newquay", "Edinburgh", "Exeter"], "replacement": ["Edinburgh"]}, {"from": "Newquay", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newquay", "Manchester", "Southampton"], "new_path": ["Newquay", "Edinburgh", "Southampton"], "replacement": ["Edinburgh"]}, {"from": "Benbecula", "to": "Exeter", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Benbecula", "Glasgow", "London", "Manchester", "Exeter"], "new_path": ["Benbecula", "Glasgow", "London", "Edinburgh", "Exeter"], "replacement": ["Glasgow", "London", "Edinburgh"]}]}, "Edinburgh": {"degree": 11, "betweenness": 0.224, "closeness": 0.629, "components": 2, "largest_cc": 21, "articulation": true, "avg_path_before": 2.051, "avg_path_after": 2.09, "avg_path_delta": 0.039, "affected_routes": [{"from": "London", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["London", "Edinburgh", "Birmingham"], "new_path": ["London", "Glasgow", "Birmingham"], "replacement": ["Glasgow"]}, {"from": "London", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["London", "Edinburgh", "Bristol"], "new_path": ["London", "Glasgow", "Bristol"], "replacement": ["Glasgow"]}, {"from": "London", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["London", "Edinburgh", "Bournemouth"]}, {"from": "London", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["London", "Edinburgh", "Stornoway"], "new_path": ["London", "Glasgow", "Stornoway"], "replacement": ["Glasgow"]}, {"from": "London", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["London", "Edinburgh", "Kirkwall"], "new_path": ["London", "Glasgow", "Kirkwall"], "replacement": ["Glasgow"]}, {"from": "London", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["London", "Edinburgh", "Sumburgh"], "new_path": ["London", "Aberdeen", "Sumburgh"], "replacement": ["Aberdeen"]}, {"from": "Manchester", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Manchester", "London", "Edinburgh", "Bournemouth"]}, {"from": "Glasgow", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Glasgow", "London", "Edinburgh", "Bournemouth"]}, {"from": "Birmingham", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Edinburgh", "London"], "new_path": ["Birmingham", "Glasgow", "London"], "replacement": ["Glasgow"]}, {"from": "Birmingham", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Edinburgh", "Bristol"], "new_path": ["Birmingham", "Glasgow", "Bristol"], "replacement": ["Glasgow"]}, {"from": "Birmingham", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Edinburgh", "Exeter"], "new_path": ["Birmingham", "Newcastle", "Exeter"], "replacement": ["Newcastle"]}, {"from": "Birmingham", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Birmingham", "Edinburgh", "London", "Dundee"], "new_path": ["Birmingham", "Glasgow", "London", "Dundee"], "replacement": ["Glasgow", "London"]}, {"from": "Birmingham", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Edinburgh", "Southampton"], "new_path": ["Birmingham", "Glasgow", "Southampton"], "replacement": ["Glasgow"]}, {"from": "Birmingham", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Birmingham", "Edinburgh", "Bournemouth"]}, {"from": "Birmingham", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Birmingham", "Edinburgh", "Newquay"], "new_path": ["Birmingham", "Glasgow", "London", "Newquay"], "replacement": ["Glasgow", "London"]}, {"from": "Birmingham", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Edinburgh", "Stornoway"], "new_path": ["Birmingham", "Glasgow", "Stornoway"], "replacement": ["Glasgow"]}, {"from": "Birmingham", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Edinburgh", "Kirkwall"], "new_path": ["Birmingham", "Glasgow", "Kirkwall"], "replacement": ["Glasgow"]}, {"from": "Birmingham", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Edinburgh", "Sumburgh"], "new_path": ["Birmingham", "Aberdeen", "Sumburgh"], "replacement": ["Aberdeen"]}, {"from": "Bristol", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Edinburgh", "London"], "new_path": ["Bristol", "Glasgow", "London"], "replacement": ["Glasgow"]}, {"from": "Bristol", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Edinburgh", "Birmingham"], "new_path": ["Bristol", "Glasgow", "Birmingham"], "replacement": ["Glasgow"]}, {"from": "Bristol", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Edinburgh", "Exeter"], "new_path": ["Bristol", "Newcastle", "Exeter"], "replacement": ["Newcastle"]}, {"from": "Bristol", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Bristol", "Edinburgh", "London", "Dundee"], "new_path": ["Bristol", "Glasgow", "London", "Dundee"], "replacement": ["Glasgow", "London"]}, {"from": "Bristol", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Edinburgh", "Southampton"], "new_path": ["Bristol", "Glasgow", "Southampton"], "replacement": ["Glasgow"]}, {"from": "Bristol", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Bristol", "Edinburgh", "Bournemouth"]}, {"from": "Bristol", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Bristol", "Edinburgh", "Newquay"], "new_path": ["Bristol", "Glasgow", "London", "Newquay"], "replacement": ["Glasgow", "London"]}, {"from": "Bristol", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Edinburgh", "Stornoway"], "new_path": ["Bristol", "Glasgow", "Stornoway"], "replacement": ["Glasgow"]}, {"from": "Bristol", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Edinburgh", "Kirkwall"], "new_path": ["Bristol", "Glasgow", "Kirkwall"], "replacement": ["Glasgow"]}, {"from": "Bristol", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Edinburgh", "Sumburgh"], "new_path": ["Bristol", "Aberdeen", "Sumburgh"], "replacement": ["Aberdeen"]}, {"from": "Liverpool", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Liverpool", "Belfast", "Edinburgh", "Bournemouth"]}, {"from": "Newcastle", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Bournemouth"]}, {"from": "Newcastle", "to": "Newquay", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Newquay"], "new_path": ["Newcastle", "Belfast", "London", "Newquay"], "replacement": ["Belfast", "London"]}, {"from": "Newcastle", "to": "Stornoway", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Stornoway"], "new_path": ["Newcastle", "Birmingham", "Glasgow", "Stornoway"], "replacement": ["Birmingham", "Glasgow"]}, {"from": "Newcastle", "to": "Kirkwall", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Kirkwall"], "new_path": ["Newcastle", "Birmingham", "Glasgow", "Kirkwall"], "replacement": ["Birmingham", "Glasgow"]}, {"from": "Newcastle", "to": "Sumburgh", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Sumburgh"], "new_path": ["Newcastle", "Birmingham", "Aberdeen", "Sumburgh"], "replacement": ["Birmingham", "Aberdeen"]}, {"from": "Belfast", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Belfast", "Edinburgh", "Bournemouth"]}, {"from": "Belfast", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Belfast", "Edinburgh", "Stornoway"], "new_path": ["Belfast", "Glasgow", "Stornoway"], "replacement": ["Glasgow"]}, {"from": "Belfast", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Belfast", "Edinburgh", "Kirkwall"], "new_path": ["Belfast", "Glasgow", "Kirkwall"], "replacement": ["Glasgow"]}, {"from": "Belfast", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Belfast", "Edinburgh", "Sumburgh"], "new_path": ["Belfast", "Aberdeen", "Sumburgh"], "replacement": ["Aberdeen"]}, {"from": "Leeds", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Edinburgh", "Bournemouth"]}, {"from": "Leeds", "to": "Stornoway", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Leeds", "Belfast", "Edinburgh", "Stornoway"], "new_path": ["Leeds", "Belfast", "Glasgow", "Stornoway"], "replacement": ["Belfast", "Glasgow"]}, {"from": "Leeds", "to": "Kirkwall", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Leeds", "Belfast", "Edinburgh", "Kirkwall"], "new_path": ["Leeds", "Belfast", "Glasgow", "Kirkwall"], "replacement": ["Belfast", "Glasgow"]}, {"from": "Leeds", "to": "Sumburgh", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Leeds", "Belfast", "Edinburgh", "Sumburgh"], "new_path": ["Leeds", "Belfast", "Aberdeen", "Sumburgh"], "replacement": ["Belfast", "Aberdeen"]}, {"from": "Cardiff", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Edinburgh", "Bournemouth"]}, {"from": "Cardiff", "to": "Stornoway", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Cardiff", "Belfast", "Edinburgh", "Stornoway"], "new_path": ["Cardiff", "Belfast", "Glasgow", "Stornoway"], "replacement": ["Belfast", "Glasgow"]}, {"from": "Cardiff", "to": "Kirkwall", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Cardiff", "Belfast", "Edinburgh", "Kirkwall"], "new_path": ["Cardiff", "Belfast", "Glasgow", "Kirkwall"], "replacement": ["Belfast", "Glasgow"]}, {"from": "Cardiff", "to": "Sumburgh", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Cardiff", "Belfast", "Edinburgh", "Sumburgh"], "new_path": ["Cardiff", "Belfast", "Aberdeen", "Sumburgh"], "replacement": ["Belfast", "Aberdeen"]}, {"from": "Aberdeen", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Aberdeen", "London", "Edinburgh", "Bournemouth"]}, {"from": "Aberdeen", "to": "Stornoway", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Aberdeen", "London", "Edinburgh", "Stornoway"], "new_path": ["Aberdeen", "London", "Glasgow", "Stornoway"], "replacement": ["London", "Glasgow"]}, {"from": "Exeter", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Exeter", "Edinburgh", "Birmingham"], "new_path": ["Exeter", "Newcastle", "Birmingham"], "replacement": ["Newcastle"]}, {"from": "Exeter", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Exeter", "Edinburgh", "Bristol"], "new_path": ["Exeter", "Newcastle", "Bristol"], "replacement": ["Newcastle"]}, {"from": "Exeter", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Exeter", "Edinburgh", "Bournemouth"]}, {"from": "Exeter", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Exeter", "Edinburgh", "Stornoway"], "new_path": ["Exeter", "Manchester", "Inverness", "Stornoway"], "replacement": ["Manchester", "Inverness"]}, {"from": "Exeter", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Exeter", "Edinburgh", "Kirkwall"], "new_path": ["Exeter", "Manchester", "Aberdeen", "Kirkwall"], "replacement": ["Manchester", "Aberdeen"]}, {"from": "Exeter", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Exeter", "Edinburgh", "Sumburgh"], "new_path": ["Exeter", "Manchester", "Aberdeen", "Sumburgh"], "replacement": ["Manchester", "Aberdeen"]}, {"from": "Dundee", "to": "Birmingham", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Edinburgh", "Birmingham"], "new_path": ["Dundee", "London", "Glasgow", "Birmingham"], "replacement": ["London", "Glasgow"]}, {"from": "Dundee", "to": "Bristol", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Edinburgh", "Bristol"], "new_path": ["Dundee", "London", "Glasgow", "Bristol"], "replacement": ["London", "Glasgow"]}, {"from": "Dundee", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Dundee", "London", "Edinburgh", "Bournemouth"]}, {"from": "Dundee", "to": "Stornoway", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Edinburgh", "Stornoway"], "new_path": ["Dundee", "London", "Glasgow", "Stornoway"], "replacement": ["London", "Glasgow"]}, {"from": "Inverness", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Inverness", "London", "Edinburgh", "Bournemouth"]}, {"from": "Norwich", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Edinburgh", "Bournemouth"]}, {"from": "Norwich", "to": "Stornoway", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Norwich", "Aberdeen", "London", "Edinburgh", "Stornoway"], "new_path": ["Norwich", "Aberdeen", "London", "Glasgow", "Stornoway"], "replacement": ["Aberdeen", "London", "Glasgow"]}, {"from": "Southampton", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Edinburgh", "Birmingham"], "new_path": ["Southampton", "Glasgow", "Birmingham"], "replacement": ["Glasgow"]}, {"from": "Southampton", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Edinburgh", "Bristol"], "new_path": ["Southampton", "Glasgow", "Bristol"], "replacement": ["Glasgow"]}, {"from": "Southampton", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Southampton", "Edinburgh", "Bournemouth"]}, {"from": "Southampton", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Edinburgh", "Stornoway"], "new_path": ["Southampton", "Glasgow", "Stornoway"], "replacement": ["Glasgow"]}, {"from": "Southampton", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Edinburgh", "Kirkwall"], "new_path": ["Southampton", "Glasgow", "Kirkwall"], "replacement": ["Glasgow"]}, {"from": "Southampton", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Southampton", "Edinburgh", "Sumburgh"], "new_path": ["Southampton", "Manchester", "Aberdeen", "Sumburgh"], "replacement": ["Manchester", "Aberdeen"]}, {"from": "Bournemouth", "to": "London", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London"]}, {"from": "Bournemouth", "to": "Manchester", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Manchester"]}, {"from": "Bournemouth", "to": "Glasgow", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Glasgow"]}, {"from": "Bournemouth", "to": "Birmingham", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Birmingham"]}, {"from": "Bournemouth", "to": "Bristol", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Bristol"]}, {"from": "Bournemouth", "to": "Liverpool", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Belfast", "Liverpool"]}, {"from": "Bournemouth", "to": "Newcastle", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Birmingham", "Newcastle"]}, {"from": "Bournemouth", "to": "Belfast", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Belfast"]}, {"from": "Bournemouth", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Belfast", "Leeds"]}, {"from": "Bournemouth", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Belfast", "Cardiff"]}, {"from": "Bournemouth", "to": "Aberdeen", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Aberdeen"]}, {"from": "Bournemouth", "to": "Exeter", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Exeter"]}, {"from": "Bournemouth", "to": "Dundee", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Dundee"]}, {"from": "Bournemouth", "to": "Inverness", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Inverness"]}, {"from": "Bournemouth", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Aberdeen", "Norwich"]}, {"from": "Bournemouth", "to": "Southampton", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Southampton"]}, {"from": "Bournemouth", "to": "Newquay", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Newquay"]}, {"from": "Bournemouth", "to": "Stornoway", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Stornoway"]}, {"from": "Bournemouth", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Glasgow", "Benbecula"]}, {"from": "Bournemouth", "to": "Kirkwall", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Kirkwall"]}, {"from": "Bournemouth", "to": "Sumburgh", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Sumburgh"]}, {"from": "Newquay", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newquay", "Edinburgh", "Birmingham"], "new_path": ["Newquay", "London", "Glasgow", "Birmingham"], "replacement": ["London", "Glasgow"]}, {"from": "Newquay", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newquay", "Edinburgh", "Bristol"], "new_path": ["Newquay", "London", "Glasgow", "Bristol"], "replacement": ["London", "Glasgow"]}, {"from": "Newquay", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Newquay", "Edinburgh", "Bournemouth"]}, {"from": "Newquay", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newquay", "Edinburgh", "Stornoway"], "new_path": ["Newquay", "London", "Glasgow", "Stornoway"], "replacement": ["London", "Glasgow"]}, {"from": "Newquay", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newquay", "Edinburgh", "Kirkwall"], "new_path": ["Newquay", "London", "Glasgow", "Kirkwall"], "replacement": ["London", "Glasgow"]}, {"from": "Newquay", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newquay", "Edinburgh", "Sumburgh"], "new_path": ["Newquay", "London", "Aberdeen", "Sumburgh"], "replacement": ["London", "Aberdeen"]}, {"from": "Stornoway", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Stornoway", "Edinburgh", "Exeter"], "new_path": ["Stornoway", "Inverness", "Manchester", "Exeter"], "replacement": ["Inverness", "Manchester"]}, {"from": "Stornoway", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Stornoway", "Edinburgh", "Bournemouth"]}, {"from": "Stornoway", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Stornoway", "Edinburgh", "Newquay"], "new_path": ["Stornoway", "Glasgow", "London", "Newquay"], "replacement": ["Glasgow", "London"]}, {"from": "Stornoway", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Stornoway", "Edinburgh", "Sumburgh"], "new_path": ["Stornoway", "Glasgow", "Kirkwall", "Sumburgh"], "replacement": ["Glasgow", "Kirkwall"]}, {"from": "Benbecula", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Edinburgh", "Bournemouth"]}, {"from": "Kirkwall", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Kirkwall", "Edinburgh", "London"], "new_path": ["Kirkwall", "Glasgow", "London"], "replacement": ["Glasgow"]}, {"from": "Kirkwall", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Kirkwall", "Edinburgh", "Birmingham"], "new_path": ["Kirkwall", "Glasgow", "Birmingham"], "replacement": ["Glasgow"]}, {"from": "Kirkwall", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Kirkwall", "Edinburgh", "Bristol"], "new_path": ["Kirkwall", "Glasgow", "Bristol"], "replacement": ["Glasgow"]}, {"from": "Kirkwall", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Kirkwall", "Edinburgh", "Birmingham", "Newcastle"], "new_path": ["Kirkwall", "Glasgow", "Birmingham", "Newcastle"], "replacement": ["Glasgow", "Birmingham"]}, {"from": "Kirkwall", "to": "Belfast", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Kirkwall", "Edinburgh", "Belfast"], "new_path": ["Kirkwall", "Glasgow", "Belfast"], "replacement": ["Glasgow"]}, {"from": "Kirkwall", "to": "Leeds", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Kirkwall", "Edinburgh", "Belfast", "Leeds"], "new_path": ["Kirkwall", "Glasgow", "Belfast", "Leeds"], "replacement": ["Glasgow", "Belfast"]}, {"from": "Kirkwall", "to": "Cardiff", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Kirkwall", "Edinburgh", "Belfast", "Cardiff"], "new_path": ["Kirkwall", "Glasgow", "Belfast", "Cardiff"], "replacement": ["Glasgow", "Belfast"]}, {"from": "Kirkwall", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Kirkwall", "Edinburgh", "Exeter"], "new_path": ["Kirkwall", "Aberdeen", "Manchester", "Exeter"], "replacement": ["Aberdeen", "Manchester"]}, {"from": "Kirkwall", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Kirkwall", "Edinburgh", "Southampton"], "new_path": ["Kirkwall", "Glasgow", "Southampton"], "replacement": ["Glasgow"]}, {"from": "Kirkwall", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Kirkwall", "Edinburgh", "Bournemouth"]}, {"from": "Kirkwall", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Kirkwall", "Edinburgh", "Newquay"], "new_path": ["Kirkwall", "Glasgow", "London", "Newquay"], "replacement": ["Glasgow", "London"]}, {"from": "Kirkwall", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Kirkwall", "Edinburgh", "Stornoway"], "new_path": ["Kirkwall", "Glasgow", "Stornoway"], "replacement": ["Glasgow"]}, {"from": "Sumburgh", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Sumburgh", "Edinburgh", "London"], "new_path": ["Sumburgh", "Aberdeen", "London"], "replacement": ["Aberdeen"]}, {"from": "Sumburgh", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Sumburgh", "Edinburgh", "Birmingham"], "new_path": ["Sumburgh", "Aberdeen", "Birmingham"], "replacement": ["Aberdeen"]}, {"from": "Sumburgh", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Sumburgh", "Edinburgh", "Bristol"], "new_path": ["Sumburgh", "Aberdeen", "Bristol"], "replacement": ["Aberdeen"]}, {"from": "Sumburgh", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Belfast", "Liverpool"], "new_path": ["Sumburgh", "Aberdeen", "Belfast", "Liverpool"], "replacement": ["Aberdeen", "Belfast"]}, {"from": "Sumburgh", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Birmingham", "Newcastle"], "new_path": ["Sumburgh", "Aberdeen", "Birmingham", "Newcastle"], "replacement": ["Aberdeen", "Birmingham"]}, {"from": "Sumburgh", "to": "Belfast", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Sumburgh", "Edinburgh", "Belfast"], "new_path": ["Sumburgh", "Aberdeen", "Belfast"], "replacement": ["Aberdeen"]}, {"from": "Sumburgh", "to": "Leeds", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Belfast", "Leeds"], "new_path": ["Sumburgh", "Aberdeen", "Belfast", "Leeds"], "replacement": ["Aberdeen", "Belfast"]}, {"from": "Sumburgh", "to": "Cardiff", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Belfast", "Cardiff"], "new_path": ["Sumburgh", "Aberdeen", "Belfast", "Cardiff"], "replacement": ["Aberdeen", "Belfast"]}, {"from": "Sumburgh", "to": "Exeter", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Exeter"], "new_path": ["Sumburgh", "Aberdeen", "Manchester", "Exeter"], "replacement": ["Aberdeen", "Manchester"]}, {"from": "Sumburgh", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Southampton"], "new_path": ["Sumburgh", "Aberdeen", "Manchester", "Southampton"], "replacement": ["Aberdeen", "Manchester"]}, {"from": "Sumburgh", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Sumburgh", "Edinburgh", "Bournemouth"]}, {"from": "Sumburgh", "to": "Newquay", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Newquay"], "new_path": ["Sumburgh", "Aberdeen", "London", "Newquay"], "replacement": ["Aberdeen", "London"]}, {"from": "Sumburgh", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Stornoway"], "new_path": ["Sumburgh", "Kirkwall", "Glasgow", "Stornoway"], "replacement": ["Kirkwall", "Glasgow"]}]}, "Glasgow": {"degree": 9, "betweenness": 0.152, "closeness": 0.579, "components": 2, "largest_cc": 21, "articulation": true, "avg_path_before": 2.051, "avg_path_after": 2.024, "avg_path_delta": -0.028, "affected_routes": [{"from": "London", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["London", "Glasgow", "Liverpool"], "new_path": ["London", "Belfast", "Liverpool"], "replacement": ["Belfast"]}, {"from": "London", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["London", "Glasgow", "Benbecula"]}, {"from": "Manchester", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Manchester", "London", "Glasgow", "Benbecula"]}, {"from": "Edinburgh", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Edinburgh", "London", "Glasgow", "Benbecula"]}, {"from": "Birmingham", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Glasgow", "Liverpool"], "new_path": ["Birmingham", "Belfast", "Liverpool"], "replacement": ["Belfast"]}, {"from": "Birmingham", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Birmingham", "Glasgow", "Benbecula"]}, {"from": "Bristol", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Glasgow", "Liverpool"], "new_path": ["Bristol", "Belfast", "Liverpool"], "replacement": ["Belfast"]}, {"from": "Bristol", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Bristol", "Glasgow", "Benbecula"]}, {"from": "Liverpool", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Liverpool", "Glasgow", "London"], "new_path": ["Liverpool", "Belfast", "London"], "replacement": ["Belfast"]}, {"from": "Liverpool", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Liverpool", "Glasgow", "Birmingham"], "new_path": ["Liverpool", "Belfast", "Birmingham"], "replacement": ["Belfast"]}, {"from": "Liverpool", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Liverpool", "Glasgow", "Bristol"], "new_path": ["Liverpool", "Belfast", "Bristol"], "replacement": ["Belfast"]}, {"from": "Liverpool", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Liverpool", "Glasgow", "London", "Dundee"], "new_path": ["Liverpool", "Belfast", "London", "Dundee"], "replacement": ["Belfast", "London"]}, {"from": "Liverpool", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Liverpool", "Glasgow", "Southampton"], "new_path": ["Liverpool", "Belfast", "Southampton"], "replacement": ["Belfast"]}, {"from": "Liverpool", "to": "Newquay", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Liverpool", "Glasgow", "London", "Newquay"], "new_path": ["Liverpool", "Belfast", "London", "Newquay"], "replacement": ["Belfast", "London"]}, {"from": "Liverpool", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Liverpool", "Glasgow", "Stornoway"], "new_path": ["Liverpool", "Belfast", "Edinburgh", "Stornoway"], "replacement": ["Belfast", "Edinburgh"]}, {"from": "Liverpool", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Liverpool", "Glasgow", "Benbecula"]}, {"from": "Liverpool", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Liverpool", "Glasgow", "Kirkwall"], "new_path": ["Liverpool", "Belfast", "Edinburgh", "Kirkwall"], "replacement": ["Belfast", "Edinburgh"]}, {"from": "Liverpool", "to": "Sumburgh", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Liverpool", "Glasgow", "Kirkwall", "Sumburgh"], "new_path": ["Liverpool", "Belfast", "Edinburgh", "Sumburgh"], "replacement": ["Belfast", "Edinburgh"]}, {"from": "Newcastle", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Newcastle", "Birmingham", "Glasgow", "Benbecula"]}, {"from": "Belfast", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Belfast", "Glasgow", "Benbecula"]}, {"from": "Leeds", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Glasgow", "Benbecula"]}, {"from": "Cardiff", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Glasgow", "Benbecula"]}, {"from": "Aberdeen", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Aberdeen", "London", "Glasgow", "Benbecula"]}, {"from": "Exeter", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Exeter", "Manchester", "London", "Glasgow", "Benbecula"]}, {"from": "Dundee", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Dundee", "London", "Glasgow", "Liverpool"], "new_path": ["Dundee", "London", "Belfast", "Liverpool"], "replacement": ["London", "Belfast"]}, {"from": "Dundee", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Dundee", "London", "Glasgow", "Benbecula"]}, {"from": "Inverness", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Inverness", "London", "Glasgow", "Benbecula"]}, {"from": "Norwich", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Glasgow", "Benbecula"]}, {"from": "Southampton", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Southampton", "Glasgow", "Liverpool"], "new_path": ["Southampton", "Belfast", "Liverpool"], "replacement": ["Belfast"]}, {"from": "Southampton", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Southampton", "Glasgow", "Benbecula"]}, {"from": "Bournemouth", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Glasgow", "Benbecula"]}, {"from": "Newquay", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newquay", "London", "Glasgow", "Liverpool"], "new_path": ["Newquay", "London", "Belfast", "Liverpool"], "replacement": ["London", "Belfast"]}, {"from": "Newquay", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Newquay", "London", "Glasgow", "Benbecula"]}, {"from": "Stornoway", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Stornoway", "Glasgow", "London"], "new_path": ["Stornoway", "Edinburgh", "London"], "replacement": ["Edinburgh"]}, {"from": "Stornoway", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Stornoway", "Glasgow", "Birmingham"], "new_path": ["Stornoway", "Edinburgh", "Birmingham"], "replacement": ["Edinburgh"]}, {"from": "Stornoway", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Stornoway", "Glasgow", "Bristol"], "new_path": ["Stornoway", "Edinburgh", "Bristol"], "replacement": ["Edinburgh"]}, {"from": "Stornoway", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "Liverpool"], "new_path": ["Stornoway", "Edinburgh", "Belfast", "Liverpool"], "replacement": ["Edinburgh", "Belfast"]}, {"from": "Stornoway", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "Birmingham", "Newcastle"], "new_path": ["Stornoway", "Edinburgh", "Birmingham", "Newcastle"], "replacement": ["Edinburgh", "Birmingham"]}, {"from": "Stornoway", "to": "Belfast", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Stornoway", "Glasgow", "Belfast"], "new_path": ["Stornoway", "Edinburgh", "Belfast"], "replacement": ["Edinburgh"]}, {"from": "Stornoway", "to": "Leeds", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "Belfast", "Leeds"], "new_path": ["Stornoway", "Edinburgh", "Belfast", "Leeds"], "replacement": ["Edinburgh", "Belfast"]}, {"from": "Stornoway", "to": "Cardiff", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "Belfast", "Cardiff"], "new_path": ["Stornoway", "Edinburgh", "Belfast", "Cardiff"], "replacement": ["Edinburgh", "Belfast"]}, {"from": "Stornoway", "to": "Aberdeen", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "London", "Aberdeen"], "new_path": ["Stornoway", "Edinburgh", "London", "Aberdeen"], "replacement": ["Edinburgh", "London"]}, {"from": "Stornoway", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "London", "Dundee"], "new_path": ["Stornoway", "Edinburgh", "London", "Dundee"], "replacement": ["Edinburgh", "London"]}, {"from": "Stornoway", "to": "Norwich", "status": "REROUTED", "old_len": 4, "new_len": 4, "old_path": ["Stornoway", "Glasgow", "London", "Aberdeen", "Norwich"], "new_path": ["Stornoway", "Edinburgh", "London", "Aberdeen", "Norwich"], "replacement": ["Edinburgh", "London", "Aberdeen"]}, {"from": "Stornoway", "to": "Southampton", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Stornoway", "Glasgow", "Southampton"], "new_path": ["Stornoway", "Edinburgh", "Southampton"], "replacement": ["Edinburgh"]}, {"from": "Stornoway", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Stornoway", "Glasgow", "Benbecula"]}, {"from": "Stornoway", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Stornoway", "Glasgow", "Kirkwall"], "new_path": ["Stornoway", "Edinburgh", "Kirkwall"], "replacement": ["Edinburgh"]}, {"from": "Benbecula", "to": "London", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London"]}, {"from": "Benbecula", "to": "Manchester", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Manchester"]}, {"from": "Benbecula", "to": "Edinburgh", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Edinburgh"]}, {"from": "Benbecula", "to": "Birmingham", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Birmingham"]}, {"from": "Benbecula", "to": "Bristol", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Bristol"]}, {"from": "Benbecula", "to": "Liverpool", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Liverpool"]}, {"from": "Benbecula", "to": "Newcastle", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Birmingham", "Newcastle"]}, {"from": "Benbecula", "to": "Belfast", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Belfast"]}, {"from": "Benbecula", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Belfast", "Leeds"]}, {"from": "Benbecula", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Belfast", "Cardiff"]}, {"from": "Benbecula", "to": "Aberdeen", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Aberdeen"]}, {"from": "Benbecula", "to": "Exeter", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Manchester", "Exeter"]}, {"from": "Benbecula", "to": "Dundee", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Dundee"]}, {"from": "Benbecula", "to": "Inverness", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Inverness"]}, {"from": "Benbecula", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Aberdeen", "Norwich"]}, {"from": "Benbecula", "to": "Southampton", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Southampton"]}, {"from": "Benbecula", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Edinburgh", "Bournemouth"]}, {"from": "Benbecula", "to": "Newquay", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Newquay"]}, {"from": "Benbecula", "to": "Stornoway", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Stornoway"]}, {"from": "Benbecula", "to": "Kirkwall", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Kirkwall"]}, {"from": "Benbecula", "to": "Sumburgh", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Kirkwall", "Sumburgh"]}, {"from": "Kirkwall", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Kirkwall", "Glasgow", "Liverpool"], "new_path": ["Kirkwall", "Edinburgh", "Belfast", "Liverpool"], "replacement": ["Edinburgh", "Belfast"]}, {"from": "Kirkwall", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Kirkwall", "Glasgow", "Benbecula"]}, {"from": "Sumburgh", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Sumburgh", "Kirkwall", "Glasgow", "Benbecula"]}]}, "Birmingham": {"degree": 5, "betweenness": 0.021, "closeness": 0.55, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.074, "avg_path_delta": 0.022, "affected_routes": [{"from": "Edinburgh", "to": "Newcastle", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Edinburgh", "Birmingham", "Newcastle"], "new_path": ["Edinburgh", "Bristol", "Newcastle"], "replacement": ["Bristol"]}, {"from": "Glasgow", "to": "Newcastle", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Glasgow", "Birmingham", "Newcastle"], "new_path": ["Glasgow", "Bristol", "Newcastle"], "replacement": ["Bristol"]}, {"from": "Newcastle", "to": "Edinburgh", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newcastle", "Birmingham", "Edinburgh"], "new_path": ["Newcastle", "Bristol", "Edinburgh"], "replacement": ["Bristol"]}, {"from": "Newcastle", "to": "Glasgow", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newcastle", "Birmingham", "Glasgow"], "new_path": ["Newcastle", "Bristol", "Glasgow"], "replacement": ["Bristol"]}, {"from": "Newcastle", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newcastle", "Birmingham", "Aberdeen"], "new_path": ["Newcastle", "Bristol", "Aberdeen"], "replacement": ["Bristol"]}, {"from": "Newcastle", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Aberdeen", "Norwich"], "new_path": ["Newcastle", "Bristol", "Aberdeen", "Norwich"], "replacement": ["Bristol", "Aberdeen"]}, {"from": "Newcastle", "to": "Bournemouth", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Bournemouth"], "new_path": ["Newcastle", "Bristol", "Edinburgh", "Bournemouth"], "replacement": ["Bristol", "Edinburgh"]}, {"from": "Newcastle", "to": "Newquay", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Newquay"], "new_path": ["Newcastle", "Bristol", "Edinburgh", "Newquay"], "replacement": ["Bristol", "Edinburgh"]}, {"from": "Newcastle", "to": "Stornoway", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Stornoway"], "new_path": ["Newcastle", "Bristol", "Edinburgh", "Stornoway"], "replacement": ["Bristol", "Edinburgh"]}, {"from": "Newcastle", "to": "Benbecula", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Glasgow", "Benbecula"], "new_path": ["Newcastle", "Bristol", "Glasgow", "Benbecula"], "replacement": ["Bristol", "Glasgow"]}, {"from": "Newcastle", "to": "Kirkwall", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Kirkwall"], "new_path": ["Newcastle", "Bristol", "Edinburgh", "Kirkwall"], "replacement": ["Bristol", "Edinburgh"]}, {"from": "Newcastle", "to": "Sumburgh", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newcastle", "Birmingham", "Edinburgh", "Sumburgh"], "new_path": ["Newcastle", "Bristol", "Edinburgh", "Sumburgh"], "replacement": ["Bristol", "Edinburgh"]}, {"from": "Aberdeen", "to": "Newcastle", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Aberdeen", "Birmingham", "Newcastle"], "new_path": ["Aberdeen", "Bristol", "Newcastle"], "replacement": ["Bristol"]}, {"from": "Norwich", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Norwich", "Aberdeen", "Birmingham", "Newcastle"], "new_path": ["Norwich", "Aberdeen", "Bristol", "Newcastle"], "replacement": ["Aberdeen", "Bristol"]}, {"from": "Bournemouth", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Bournemouth", "Edinburgh", "Birmingham", "Newcastle"], "new_path": ["Bournemouth", "Edinburgh", "Bristol", "Newcastle"], "replacement": ["Edinburgh", "Bristol"]}, {"from": "Stornoway", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Stornoway", "Glasgow", "Birmingham", "Newcastle"], "new_path": ["Stornoway", "Edinburgh", "Bristol", "Newcastle"], "replacement": ["Edinburgh", "Bristol"]}, {"from": "Benbecula", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Benbecula", "Glasgow", "Birmingham", "Newcastle"], "new_path": ["Benbecula", "Glasgow", "Bristol", "Newcastle"], "replacement": ["Glasgow", "Bristol"]}, {"from": "Kirkwall", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Kirkwall", "Edinburgh", "Birmingham", "Newcastle"], "new_path": ["Kirkwall", "Edinburgh", "Bristol", "Newcastle"], "replacement": ["Edinburgh", "Bristol"]}, {"from": "Sumburgh", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Birmingham", "Newcastle"], "new_path": ["Sumburgh", "Edinburgh", "Bristol", "Newcastle"], "replacement": ["Edinburgh", "Bristol"]}]}, "Bristol": {"degree": 6, "betweenness": 0.03, "closeness": 0.564, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.078, "avg_path_delta": 0.027, "affected_routes": [{"from": "Newcastle", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newcastle", "Bristol", "Inverness"], "new_path": ["Newcastle", "Belfast", "Inverness"], "replacement": ["Belfast"]}, {"from": "Inverness", "to": "Newcastle", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Inverness", "Bristol", "Newcastle"], "new_path": ["Inverness", "Belfast", "Newcastle"], "replacement": ["Belfast"]}]}, "Leeds": {"degree": 1, "betweenness": 0.0, "closeness": 0.423, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.022, "avg_path_delta": -0.03, "affected_routes": []}, "Liverpool": {"degree": 2, "betweenness": 0.0, "closeness": 0.458, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.039, "avg_path_delta": -0.012, "affected_routes": []}, "Newcastle": {"degree": 5, "betweenness": 0.017, "closeness": 0.468, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.043, "avg_path_delta": -0.008, "affected_routes": []}, "Cardiff": {"degree": 1, "betweenness": 0.0, "closeness": 0.423, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.022, "avg_path_delta": -0.03, "affected_routes": []}, "Belfast": {"degree": 13, "betweenness": 0.297, "closeness": 0.71, "components": 3, "largest_cc": 20, "articulation": true, "avg_path_before": 2.051, "avg_path_after": 2.1, "avg_path_delta": 0.049, "affected_routes": [{"from": "London", "to": "Newcastle", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["London", "Belfast", "Newcastle"], "new_path": ["London", "Manchester", "Exeter", "Newcastle"], "replacement": ["Manchester", "Exeter"]}, {"from": "London", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["London", "Belfast", "Leeds"]}, {"from": "London", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["London", "Belfast", "Cardiff"]}, {"from": "Manchester", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Manchester", "Belfast", "Birmingham"], "new_path": ["Manchester", "Aberdeen", "Birmingham"], "replacement": ["Aberdeen"]}, {"from": "Manchester", "to": "Bristol", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Manchester", "Belfast", "Bristol"], "new_path": ["Manchester", "Aberdeen", "Bristol"], "replacement": ["Aberdeen"]}, {"from": "Manchester", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Manchester", "Belfast", "Liverpool"], "new_path": ["Manchester", "London", "Glasgow", "Liverpool"], "replacement": ["London", "Glasgow"]}, {"from": "Manchester", "to": "Newcastle", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Manchester", "Belfast", "Newcastle"], "new_path": ["Manchester", "Exeter", "Newcastle"], "replacement": ["Exeter"]}, {"from": "Manchester", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Manchester", "Belfast", "Leeds"]}, {"from": "Manchester", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Manchester", "Belfast", "Cardiff"]}, {"from": "Edinburgh", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Edinburgh", "Belfast", "Liverpool"], "new_path": ["Edinburgh", "London", "Glasgow", "Liverpool"], "replacement": ["London", "Glasgow"]}, {"from": "Edinburgh", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Edinburgh", "Belfast", "Leeds"]}, {"from": "Edinburgh", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Edinburgh", "Belfast", "Cardiff"]}, {"from": "Glasgow", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Glasgow", "Belfast", "Leeds"]}, {"from": "Glasgow", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Glasgow", "Belfast", "Cardiff"]}, {"from": "Birmingham", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Birmingham", "Belfast", "Manchester"], "new_path": ["Birmingham", "Aberdeen", "Manchester"], "replacement": ["Aberdeen"]}, {"from": "Birmingham", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Birmingham", "Belfast", "Leeds"]}, {"from": "Birmingham", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Birmingham", "Belfast", "Cardiff"]}, {"from": "Birmingham", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Birmingham", "Belfast", "Inverness"], "new_path": ["Birmingham", "Edinburgh", "London", "Inverness"], "replacement": ["Edinburgh", "London"]}, {"from": "Bristol", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Bristol", "Belfast", "Manchester"], "new_path": ["Bristol", "Aberdeen", "Manchester"], "replacement": ["Aberdeen"]}, {"from": "Bristol", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Bristol", "Belfast", "Leeds"]}, {"from": "Bristol", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Bristol", "Belfast", "Cardiff"]}, {"from": "Liverpool", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Liverpool", "Belfast", "Manchester"], "new_path": ["Liverpool", "Glasgow", "London", "Manchester"], "replacement": ["Glasgow", "London"]}, {"from": "Liverpool", "to": "Edinburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Liverpool", "Belfast", "Edinburgh"], "new_path": ["Liverpool", "Glasgow", "London", "Edinburgh"], "replacement": ["Glasgow", "London"]}, {"from": "Liverpool", "to": "Newcastle", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Liverpool", "Belfast", "Newcastle"], "new_path": ["Liverpool", "Glasgow", "Birmingham", "Newcastle"], "replacement": ["Glasgow", "Birmingham"]}, {"from": "Liverpool", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Liverpool", "Belfast", "Leeds"]}, {"from": "Liverpool", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Liverpool", "Belfast", "Cardiff"]}, {"from": "Liverpool", "to": "Aberdeen", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Liverpool", "Belfast", "Aberdeen"], "new_path": ["Liverpool", "Glasgow", "London", "Aberdeen"], "replacement": ["Glasgow", "London"]}, {"from": "Liverpool", "to": "Exeter", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Liverpool", "Belfast", "Manchester", "Exeter"], "new_path": ["Liverpool", "Glasgow", "London", "Manchester", "Exeter"], "replacement": ["Glasgow", "London", "Manchester"]}, {"from": "Liverpool", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Liverpool", "Belfast", "Inverness"], "new_path": ["Liverpool", "Glasgow", "London", "Inverness"], "replacement": ["Glasgow", "London"]}, {"from": "Liverpool", "to": "Norwich", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Liverpool", "Belfast", "Aberdeen", "Norwich"], "new_path": ["Liverpool", "Glasgow", "London", "Aberdeen", "Norwich"], "replacement": ["Glasgow", "London", "Aberdeen"]}, {"from": "Liverpool", "to": "Bournemouth", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Liverpool", "Belfast", "Edinburgh", "Bournemouth"], "new_path": ["Liverpool", "Glasgow", "London", "Edinburgh", "Bournemouth"], "replacement": ["Glasgow", "London", "Edinburgh"]}, {"from": "Newcastle", "to": "London", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newcastle", "Belfast", "London"], "new_path": ["Newcastle", "Birmingham", "Edinburgh", "London"], "replacement": ["Birmingham", "Edinburgh"]}, {"from": "Newcastle", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Newcastle", "Belfast", "Manchester"], "new_path": ["Newcastle", "Exeter", "Manchester"], "replacement": ["Exeter"]}, {"from": "Newcastle", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Newcastle", "Belfast", "Liverpool"], "new_path": ["Newcastle", "Birmingham", "Glasgow", "Liverpool"], "replacement": ["Birmingham", "Glasgow"]}, {"from": "Newcastle", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Newcastle", "Belfast", "Leeds"]}, {"from": "Newcastle", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Newcastle", "Belfast", "Cardiff"]}, {"from": "Newcastle", "to": "Dundee", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Newcastle", "Belfast", "London", "Dundee"], "new_path": ["Newcastle", "Birmingham", "Edinburgh", "London", "Dundee"], "replacement": ["Birmingham", "Edinburgh", "London"]}, {"from": "Leeds", "to": "London", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "London"]}, {"from": "Leeds", "to": "Manchester", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Manchester"]}, {"from": "Leeds", "to": "Edinburgh", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Edinburgh"]}, {"from": "Leeds", "to": "Glasgow", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Glasgow"]}, {"from": "Leeds", "to": "Birmingham", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Birmingham"]}, {"from": "Leeds", "to": "Bristol", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Bristol"]}, {"from": "Leeds", "to": "Liverpool", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Liverpool"]}, {"from": "Leeds", "to": "Newcastle", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Newcastle"]}, {"from": "Leeds", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Cardiff"]}, {"from": "Leeds", "to": "Aberdeen", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Aberdeen"]}, {"from": "Leeds", "to": "Exeter", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Manchester", "Exeter"]}, {"from": "Leeds", "to": "Dundee", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "London", "Dundee"]}, {"from": "Leeds", "to": "Inverness", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Inverness"]}, {"from": "Leeds", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Aberdeen", "Norwich"]}, {"from": "Leeds", "to": "Southampton", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Southampton"]}, {"from": "Leeds", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Edinburgh", "Bournemouth"]}, {"from": "Leeds", "to": "Newquay", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "London", "Newquay"]}, {"from": "Leeds", "to": "Stornoway", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Edinburgh", "Stornoway"]}, {"from": "Leeds", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Glasgow", "Benbecula"]}, {"from": "Leeds", "to": "Kirkwall", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Edinburgh", "Kirkwall"]}, {"from": "Leeds", "to": "Sumburgh", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Edinburgh", "Sumburgh"]}, {"from": "Cardiff", "to": "London", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "London"]}, {"from": "Cardiff", "to": "Manchester", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Manchester"]}, {"from": "Cardiff", "to": "Edinburgh", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Edinburgh"]}, {"from": "Cardiff", "to": "Glasgow", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Glasgow"]}, {"from": "Cardiff", "to": "Birmingham", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Birmingham"]}, {"from": "Cardiff", "to": "Bristol", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Bristol"]}, {"from": "Cardiff", "to": "Liverpool", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Liverpool"]}, {"from": "Cardiff", "to": "Newcastle", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Newcastle"]}, {"from": "Cardiff", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Leeds"]}, {"from": "Cardiff", "to": "Aberdeen", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Aberdeen"]}, {"from": "Cardiff", "to": "Exeter", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Manchester", "Exeter"]}, {"from": "Cardiff", "to": "Dundee", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "London", "Dundee"]}, {"from": "Cardiff", "to": "Inverness", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Inverness"]}, {"from": "Cardiff", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Aberdeen", "Norwich"]}, {"from": "Cardiff", "to": "Southampton", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Southampton"]}, {"from": "Cardiff", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Edinburgh", "Bournemouth"]}, {"from": "Cardiff", "to": "Newquay", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "London", "Newquay"]}, {"from": "Cardiff", "to": "Stornoway", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Edinburgh", "Stornoway"]}, {"from": "Cardiff", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Glasgow", "Benbecula"]}, {"from": "Cardiff", "to": "Kirkwall", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Edinburgh", "Kirkwall"]}, {"from": "Cardiff", "to": "Sumburgh", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Edinburgh", "Sumburgh"]}, {"from": "Aberdeen", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Aberdeen", "Belfast", "Liverpool"], "new_path": ["Aberdeen", "London", "Glasgow", "Liverpool"], "replacement": ["London", "Glasgow"]}, {"from": "Aberdeen", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Aberdeen", "Belfast", "Leeds"]}, {"from": "Aberdeen", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Aberdeen", "Belfast", "Cardiff"]}, {"from": "Exeter", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Exeter", "Manchester", "Belfast", "Liverpool"], "new_path": ["Exeter", "Manchester", "London", "Glasgow", "Liverpool"], "replacement": ["Manchester", "London", "Glasgow"]}, {"from": "Exeter", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Exeter", "Manchester", "Belfast", "Leeds"]}, {"from": "Exeter", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Exeter", "Manchester", "Belfast", "Cardiff"]}, {"from": "Dundee", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Dundee", "London", "Belfast", "Newcastle"], "new_path": ["Dundee", "London", "Manchester", "Exeter", "Newcastle"], "replacement": ["London", "Manchester", "Exeter"]}, {"from": "Dundee", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Dundee", "London", "Belfast", "Leeds"]}, {"from": "Dundee", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Dundee", "London", "Belfast", "Cardiff"]}, {"from": "Inverness", "to": "Birmingham", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Inverness", "Belfast", "Birmingham"], "new_path": ["Inverness", "London", "Edinburgh", "Birmingham"], "replacement": ["London", "Edinburgh"]}, {"from": "Inverness", "to": "Liverpool", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Inverness", "Belfast", "Liverpool"], "new_path": ["Inverness", "London", "Glasgow", "Liverpool"], "replacement": ["London", "Glasgow"]}, {"from": "Inverness", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Inverness", "Belfast", "Leeds"]}, {"from": "Inverness", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Inverness", "Belfast", "Cardiff"]}, {"from": "Norwich", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Norwich", "Aberdeen", "Belfast", "Liverpool"], "new_path": ["Norwich", "Aberdeen", "London", "Glasgow", "Liverpool"], "replacement": ["Aberdeen", "London", "Glasgow"]}, {"from": "Norwich", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Belfast", "Leeds"]}, {"from": "Norwich", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Belfast", "Cardiff"]}, {"from": "Southampton", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Southampton", "Belfast", "Leeds"]}, {"from": "Southampton", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Southampton", "Belfast", "Cardiff"]}, {"from": "Bournemouth", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Bournemouth", "Edinburgh", "Belfast", "Liverpool"], "new_path": ["Bournemouth", "Edinburgh", "London", "Glasgow", "Liverpool"], "replacement": ["Edinburgh", "London", "Glasgow"]}, {"from": "Bournemouth", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Belfast", "Leeds"]}, {"from": "Bournemouth", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "Belfast", "Cardiff"]}, {"from": "Newquay", "to": "Newcastle", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Newquay", "London", "Belfast", "Newcastle"], "new_path": ["Newquay", "Manchester", "Exeter", "Newcastle"], "replacement": ["Manchester", "Exeter"]}, {"from": "Newquay", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Newquay", "London", "Belfast", "Leeds"]}, {"from": "Newquay", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Newquay", "London", "Belfast", "Cardiff"]}, {"from": "Stornoway", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Stornoway", "Glasgow", "Belfast", "Leeds"]}, {"from": "Stornoway", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Stornoway", "Glasgow", "Belfast", "Cardiff"]}, {"from": "Benbecula", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Belfast", "Leeds"]}, {"from": "Benbecula", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "Belfast", "Cardiff"]}, {"from": "Kirkwall", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Kirkwall", "Edinburgh", "Belfast", "Leeds"]}, {"from": "Kirkwall", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Kirkwall", "Edinburgh", "Belfast", "Cardiff"]}, {"from": "Sumburgh", "to": "Liverpool", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Sumburgh", "Edinburgh", "Belfast", "Liverpool"], "new_path": ["Sumburgh", "Kirkwall", "Glasgow", "Liverpool"], "replacement": ["Kirkwall", "Glasgow"]}, {"from": "Sumburgh", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Sumburgh", "Edinburgh", "Belfast", "Leeds"]}, {"from": "Sumburgh", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Sumburgh", "Edinburgh", "Belfast", "Cardiff"]}]}, "Aberdeen": {"degree": 8, "betweenness": 0.13, "closeness": 0.564, "components": 2, "largest_cc": 21, "articulation": true, "avg_path_before": 2.051, "avg_path_after": 2.01, "avg_path_delta": -0.042, "affected_routes": [{"from": "London", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["London", "Aberdeen", "Norwich"]}, {"from": "Manchester", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Manchester", "Aberdeen", "Norwich"]}, {"from": "Manchester", "to": "Kirkwall", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Manchester", "Aberdeen", "Kirkwall"], "new_path": ["Manchester", "Inverness", "Kirkwall"], "replacement": ["Inverness"]}, {"from": "Manchester", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Manchester", "Aberdeen", "Sumburgh"], "new_path": ["Manchester", "London", "Edinburgh", "Sumburgh"], "replacement": ["London", "Edinburgh"]}, {"from": "Edinburgh", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Edinburgh", "London", "Aberdeen", "Norwich"]}, {"from": "Glasgow", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Glasgow", "London", "Aberdeen", "Norwich"]}, {"from": "Birmingham", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Birmingham", "Aberdeen", "Norwich"]}, {"from": "Bristol", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Bristol", "Aberdeen", "Norwich"]}, {"from": "Liverpool", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Liverpool", "Belfast", "Aberdeen", "Norwich"]}, {"from": "Newcastle", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Newcastle", "Birmingham", "Aberdeen", "Norwich"]}, {"from": "Belfast", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Belfast", "Aberdeen", "Norwich"]}, {"from": "Leeds", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Leeds", "Belfast", "Aberdeen", "Norwich"]}, {"from": "Cardiff", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Cardiff", "Belfast", "Aberdeen", "Norwich"]}, {"from": "Exeter", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Exeter", "Manchester", "Aberdeen", "Norwich"]}, {"from": "Dundee", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Dundee", "London", "Aberdeen", "Norwich"]}, {"from": "Inverness", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Inverness", "London", "Aberdeen", "Norwich"]}, {"from": "Norwich", "to": "London", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London"]}, {"from": "Norwich", "to": "Manchester", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Manchester"]}, {"from": "Norwich", "to": "Edinburgh", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Edinburgh"]}, {"from": "Norwich", "to": "Glasgow", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Glasgow"]}, {"from": "Norwich", "to": "Birmingham", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Birmingham"]}, {"from": "Norwich", "to": "Bristol", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Bristol"]}, {"from": "Norwich", "to": "Liverpool", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Belfast", "Liverpool"]}, {"from": "Norwich", "to": "Newcastle", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Birmingham", "Newcastle"]}, {"from": "Norwich", "to": "Belfast", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Belfast"]}, {"from": "Norwich", "to": "Leeds", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Belfast", "Leeds"]}, {"from": "Norwich", "to": "Cardiff", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Belfast", "Cardiff"]}, {"from": "Norwich", "to": "Exeter", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Manchester", "Exeter"]}, {"from": "Norwich", "to": "Dundee", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Dundee"]}, {"from": "Norwich", "to": "Inverness", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Inverness"]}, {"from": "Norwich", "to": "Southampton", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Manchester", "Southampton"]}, {"from": "Norwich", "to": "Bournemouth", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Edinburgh", "Bournemouth"]}, {"from": "Norwich", "to": "Newquay", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Newquay"]}, {"from": "Norwich", "to": "Stornoway", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Edinburgh", "Stornoway"]}, {"from": "Norwich", "to": "Benbecula", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "London", "Glasgow", "Benbecula"]}, {"from": "Norwich", "to": "Kirkwall", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Kirkwall"]}, {"from": "Norwich", "to": "Sumburgh", "status": "NO_ROUTE", "old_path": ["Norwich", "Aberdeen", "Sumburgh"]}, {"from": "Southampton", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Southampton", "Manchester", "Aberdeen", "Norwich"]}, {"from": "Bournemouth", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Bournemouth", "Edinburgh", "London", "Aberdeen", "Norwich"]}, {"from": "Newquay", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Newquay", "London", "Aberdeen", "Norwich"]}, {"from": "Stornoway", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Stornoway", "Glasgow", "London", "Aberdeen", "Norwich"]}, {"from": "Benbecula", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Benbecula", "Glasgow", "London", "Aberdeen", "Norwich"]}, {"from": "Kirkwall", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 2, "old_path": ["Kirkwall", "Aberdeen", "Manchester"], "new_path": ["Kirkwall", "Inverness", "Manchester"], "replacement": ["Inverness"]}, {"from": "Kirkwall", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Kirkwall", "Aberdeen", "Norwich"]}, {"from": "Sumburgh", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Sumburgh", "Aberdeen", "Manchester"], "new_path": ["Sumburgh", "Edinburgh", "London", "Manchester"], "replacement": ["Edinburgh", "London"]}, {"from": "Sumburgh", "to": "Norwich", "status": "NO_ROUTE", "old_path": ["Sumburgh", "Aberdeen", "Norwich"]}]}, "Dundee": {"degree": 2, "betweenness": 0.001, "closeness": 0.407, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.013, "avg_path_delta": -0.038, "affected_routes": []}, "Inverness": {"degree": 6, "betweenness": 0.029, "closeness": 0.537, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.074, "avg_path_delta": 0.022, "affected_routes": [{"from": "Manchester", "to": "Stornoway", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Manchester", "Inverness", "Stornoway"], "new_path": ["Manchester", "London", "Edinburgh", "Stornoway"], "replacement": ["London", "Edinburgh"]}, {"from": "Stornoway", "to": "Manchester", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Stornoway", "Inverness", "Manchester"], "new_path": ["Stornoway", "Edinburgh", "London", "Manchester"], "replacement": ["Edinburgh", "London"]}]}, "Norwich": {"degree": 1, "betweenness": 0.0, "closeness": 0.367, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 1.987, "avg_path_delta": -0.064, "affected_routes": []}, "Southampton": {"degree": 5, "betweenness": 0.017, "closeness": 0.537, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.069, "avg_path_delta": 0.018, "affected_routes": []}, "Exeter": {"degree": 3, "betweenness": 0.007, "closeness": 0.449, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.035, "avg_path_delta": -0.017, "affected_routes": []}, "Bournemouth": {"degree": 1, "betweenness": 0.0, "closeness": 0.393, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.004, "avg_path_delta": -0.047, "affected_routes": []}, "Newquay": {"degree": 3, "betweenness": 0.002, "closeness": 0.468, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.043, "avg_path_delta": -0.008, "affected_routes": []}, "Stornoway": {"degree": 3, "betweenness": 0.007, "closeness": 0.458, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.039, "avg_path_delta": -0.012, "affected_routes": []}, "Kirkwall": {"degree": 6, "betweenness": 0.06, "closeness": 0.537, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.087, "avg_path_delta": 0.035, "affected_routes": [{"from": "Glasgow", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Glasgow", "Kirkwall", "Sumburgh"], "new_path": ["Glasgow", "London", "Edinburgh", "Sumburgh"], "replacement": ["London", "Edinburgh"]}, {"from": "Liverpool", "to": "Sumburgh", "status": "REROUTED", "old_len": 3, "new_len": 3, "old_path": ["Liverpool", "Glasgow", "Kirkwall", "Sumburgh"], "new_path": ["Liverpool", "Belfast", "Edinburgh", "Sumburgh"], "replacement": ["Belfast", "Edinburgh"]}, {"from": "Dundee", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Dundee", "Kirkwall", "Sumburgh"], "new_path": ["Dundee", "London", "Edinburgh", "Sumburgh"], "replacement": ["London", "Edinburgh"]}, {"from": "Inverness", "to": "Sumburgh", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Inverness", "Kirkwall", "Sumburgh"], "new_path": ["Inverness", "London", "Edinburgh", "Sumburgh"], "replacement": ["London", "Edinburgh"]}, {"from": "Benbecula", "to": "Sumburgh", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Benbecula", "Glasgow", "Kirkwall", "Sumburgh"], "new_path": ["Benbecula", "Glasgow", "London", "Edinburgh", "Sumburgh"], "replacement": ["Glasgow", "London", "Edinburgh"]}, {"from": "Sumburgh", "to": "Glasgow", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Sumburgh", "Kirkwall", "Glasgow"], "new_path": ["Sumburgh", "Edinburgh", "London", "Glasgow"], "replacement": ["Edinburgh", "London"]}, {"from": "Sumburgh", "to": "Dundee", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Sumburgh", "Kirkwall", "Dundee"], "new_path": ["Sumburgh", "Edinburgh", "London", "Dundee"], "replacement": ["Edinburgh", "London"]}, {"from": "Sumburgh", "to": "Inverness", "status": "REROUTED", "old_len": 2, "new_len": 3, "old_path": ["Sumburgh", "Kirkwall", "Inverness"], "new_path": ["Sumburgh", "Edinburgh", "London", "Inverness"], "replacement": ["Edinburgh", "London"]}, {"from": "Sumburgh", "to": "Benbecula", "status": "REROUTED", "old_len": 3, "new_len": 4, "old_path": ["Sumburgh", "Kirkwall", "Glasgow", "Benbecula"], "new_path": ["Sumburgh", "Edinburgh", "London", "Glasgow", "Benbecula"], "replacement": ["Edinburgh", "London", "Glasgow"]}]}, "Benbecula": {"degree": 1, "betweenness": 0.0, "closeness": 0.373, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 1.991, "avg_path_delta": -0.06, "affected_routes": []}, "Sumburgh": {"degree": 3, "betweenness": 0.003, "closeness": 0.478, "components": 1, "largest_cc": 22, "articulation": false, "avg_path_before": 2.051, "avg_path_after": 2.048, "avg_path_delta": -0.004, "affected_routes": []}};</script>
+    
+<style>
+#overlay{
+  position:fixed;
+  display:none;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,.45);
+  z-index:9000;
+}
+
+#modal{
+  position:fixed;
+  display:none;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  background:white;
+  border-radius:12px;
+  padding:20px 22px;
+  width:420px;
+  max-height:80vh;
+  overflow-y:auto;
+  z-index:9999;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  box-shadow:0 10px 40px rgba(0,0,0,.25);
+}
+
+.title{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:14px;
+}
+
+.section{
+  margin-bottom:16px;
+}
+
+.section-title{
+  font-size:12px;
+  font-weight:600;
+  color:#666;
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
+
+.row{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:4px;
+  font-size:14px;
+}
+
+.good{ color:#1a7f37; font-weight:600; }
+.bad{ color:#c62828; font-weight:600; }
+
+details summary{
+  cursor:pointer;
+  font-weight:600;
+  margin-top:10px;
+}
+
+.route{
+  font-size:13px;
+  margin-bottom:4px;
+}
+
+.close{
+  margin-top:16px;
+  background:#222;
+  color:white;
+  padding:8px 14px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+</style>
+
+<script>
+function showCity(city){
+  const d = window.FAILURE_DATA[city];
+  if(!d) return;
+
+  let routesHtml = "";
+  let lost = 0;
+  let rerouted = 0;
+
+  d.affected_routes.slice(0,10).forEach(r => {
+    if(r.status === "NO_ROUTE"){
+      lost++;
+      routesHtml += `<div class="route bad">${r.from} → ${r.to}: NO ROUTE</div>`;
+    } 
+    else if(r.status === "REROUTED"){
+      rerouted++;
+      const via = r.replacement.length > 0
+        ? r.replacement.join(" → ")
+        : "direct";
+
+      routesHtml += `
+        <div class="route good">
+          ${r.from} → ${r.to}: via ${via} (${r.old_len} → ${r.new_len})
+        </div>`;
+    }
+  });
+
+  if(d.affected_routes.length > 10){
+    routesHtml += "<i>… more affected routes</i>";
+  }
+
+  const html = `
+    <div class="title">${city}</div>
+
+    <div class="section">
+      <div class="section-title">Network impact</div>
+      <div class="row">
+        <span>Δ Avg path length</span>
+        <span class="${d.avg_path_delta > 0 ? 'bad' : 'good'}">
+          ${d.avg_path_delta}
+        </span>
+      </div>
+      <div class="row"><span>Components</span><span>${d.components}</span></div>
+      <div class="row"><span>Largest CC</span><span>${d.largest_cc}</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Node importance</div>
+      <div class="row"><span>Degree</span><span>${d.degree}</span></div>
+      <div class="row"><span>Betweenness</span><span>${d.betweenness}</span></div>
+      <div class="row"><span>Closeness</span><span>${d.closeness}</span></div>
+      <div class="row"><span>Articulation</span><span>${d.articulation ? "YES" : "NO"}</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Disruption summary</div>
+      <div class="row bad">• ${lost} routes lost</div>
+      <div class="row good">• ${rerouted} routes rerouted</div>
+    </div>
+
+    <details>
+      <summary>Show affected routes</summary>
+      ${routesHtml}
+    </details>
+
+    <button class="close" onclick="closeModal()">Close</button>
+  `;
+
+  document.getElementById("modal").innerHTML = html;
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal(){
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+<div id="overlay"></div>
+<div id="modal"></div>
+
+    
+            <div class="folium-map" id="map_0bc1c7d60fde31cd888ca05855fbd7e6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0bc1c7d60fde31cd888ca05855fbd7e6 = L.map(
+                "map_0bc1c7d60fde31cd888ca05855fbd7e6",
+                {
+                    center: [54.5, -2.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3293564d7b890954fd1ef3f65ed63cd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b3293564d7b890954fd1ef3f65ed63cd.addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_c101784dcf7614aad98cfc5656c55b9c = L.polyline(
+                [[51.5074, -0.1278], [53.4808, -2.2426]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_fc33bad945905d33d671c915be70275c = L.polyline(
+                [[51.5074, -0.1278], [55.9533, -3.1883]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 7.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_a0f3d9d50bdd82d151710c8ace4fd8f0 = L.polyline(
+                [[51.5074, -0.1278], [55.8642, -4.2518]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_cee992256d5c9f60f383f9e089ffbbd7 = L.polyline(
+                [[51.5074, -0.1278], [54.5973, -5.9301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_53e387289e518f360f9daa4c9acc68ce = L.polyline(
+                [[51.5074, -0.1278], [57.1497, -2.0943]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.8}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_2319d0f6711f3c754080a5191522c532 = L.polyline(
+                [[51.5074, -0.1278], [56.462, -2.9707]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_a6155a101f56308c4bdc6a52a4710fe5 = L.polyline(
+                [[51.5074, -0.1278], [57.4778, -4.2247]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_30a12493b67c507b5b5ee92fac3ae58c = L.polyline(
+                [[51.5074, -0.1278], [50.4406, -4.9954]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_22e5d3379cceb4b70b7829a0c2ecf35e = L.polyline(
+                [[53.4808, -2.2426], [54.5973, -5.9301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_c337a11cbca0c70f854a72ee7866303a = L.polyline(
+                [[53.4808, -2.2426], [57.1497, -2.0943]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_b3fe8444bd9763081212290d0777517f = L.polyline(
+                [[53.4808, -2.2426], [50.7344, -3.4139]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_7faf02e0250e6275d5592ee0faa89b8b = L.polyline(
+                [[53.4808, -2.2426], [57.4778, -4.2247]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_ed65490bf88bc7fa624e8cd811598db9 = L.polyline(
+                [[53.4808, -2.2426], [50.9503, -1.3568]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 8.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_441116905084baf0cc7a0c687d573ad9 = L.polyline(
+                [[53.4808, -2.2426], [50.4406, -4.9954]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_61a19ad9aac4d220f790923310539d40 = L.polyline(
+                [[55.9533, -3.1883], [52.4862, -1.8904]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_e9d4e0649072eaef2e0420a47ffcff2c = L.polyline(
+                [[55.9533, -3.1883], [51.4545, -2.5879]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.0}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_0dc63cf586676bd834ef3a53125a81f8 = L.polyline(
+                [[55.9533, -3.1883], [54.5973, -5.9301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_19da1693d5b7873917f129a64d797645 = L.polyline(
+                [[55.9533, -3.1883], [50.7344, -3.4139]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_5e12f5f12e2f4d935a9ad43f2274af30 = L.polyline(
+                [[55.9533, -3.1883], [50.9503, -1.3568]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_1c531004e69cd19aa8e7e614255b0cfb = L.polyline(
+                [[55.9533, -3.1883], [50.7792, -1.8425]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_7fe206c3f7c2ddf2a0950eb4968d79c0 = L.polyline(
+                [[55.9533, -3.1883], [50.4406, -4.9954]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_0eedfe121fb13d340e7d24da39c3fccf = L.polyline(
+                [[55.9533, -3.1883], [58.2136, -6.3315]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_14694a6027a3fbe6b1cac4edec4341c7 = L.polyline(
+                [[55.9533, -3.1883], [58.957, -2.905]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_e224ba0e33968546937f87bb8a0f81fe = L.polyline(
+                [[55.9533, -3.1883], [59.8789, -1.2956]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_fafa27907393713aba539c15112d0fef = L.polyline(
+                [[55.8642, -4.2518], [52.4862, -1.8904]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_00c20bea476b347839adf9234ed14ffa = L.polyline(
+                [[55.8642, -4.2518], [51.4545, -2.5879]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_eb8759e77c01f905a248e009fb1ecc74 = L.polyline(
+                [[55.8642, -4.2518], [53.4084, -2.9916]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_025985bb394d7f77c23af52ab9dc24fa = L.polyline(
+                [[55.8642, -4.2518], [54.5973, -5.9301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_adf96420372f9a7cbcacd4f522e9b03b = L.polyline(
+                [[55.8642, -4.2518], [50.9503, -1.3568]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_666b9163995a0d06d65f168829306e75 = L.polyline(
+                [[55.8642, -4.2518], [58.2136, -6.3315]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_851348a0966823ba4e6beaa3385b8647 = L.polyline(
+                [[55.8642, -4.2518], [57.4811, -7.3628]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_cc148f4ed37db151af7c3ea9715ed441 = L.polyline(
+                [[55.8642, -4.2518], [58.957, -2.905]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_6ccad4a0846209d7b3c6a235db5cf4f0 = L.polyline(
+                [[52.4862, -1.8904], [54.9783, -1.6178]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_642a4b16264e3478ca1de9e414ae36ea = L.polyline(
+                [[52.4862, -1.8904], [54.5973, -5.9301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_dfbaa27600d8043f21f17c0ac692aac9 = L.polyline(
+                [[52.4862, -1.8904], [57.1497, -2.0943]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_e96a6cb597314d13a4ff0d0377753345 = L.polyline(
+                [[51.4545, -2.5879], [54.9783, -1.6178]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_5dfe6979d6f85e611697c1a2892b660c = L.polyline(
+                [[51.4545, -2.5879], [54.5973, -5.9301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_13e10468bcd31ce822c3fadd889ae108 = L.polyline(
+                [[51.4545, -2.5879], [57.1497, -2.0943]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_380ba9dc70753ae3bc82eb165b412d63 = L.polyline(
+                [[51.4545, -2.5879], [57.4778, -4.2247]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_ed0917d94dabfd4360878641d258cbf3 = L.polyline(
+                [[53.4084, -2.9916], [54.5973, -5.9301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_b8cbc7837d73137bfb9cb47ada92565b = L.polyline(
+                [[54.9783, -1.6178], [54.5973, -5.9301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_c0399ef2d48e7f4b53e1f211077300b6 = L.polyline(
+                [[54.9783, -1.6178], [50.7344, -3.4139]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_ecfb1cbb628962721be33c523322b153 = L.polyline(
+                [[54.9783, -1.6178], [50.9503, -1.3568]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.8}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_0dc0da600e4eef6e3aa6b5fddd47bb13 = L.polyline(
+                [[54.5973, -5.9301], [53.8008, -1.5491]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_5c8d6f8ba9595bbddcdf7b63666ea214 = L.polyline(
+                [[54.5973, -5.9301], [51.4816, -3.1791]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_1201ede02cec9f21b4c14cb99ca7bb06 = L.polyline(
+                [[54.5973, -5.9301], [57.1497, -2.0943]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_a24f6158c9110f7a6b4abe2b7d427764 = L.polyline(
+                [[54.5973, -5.9301], [57.4778, -4.2247]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_ff27d2f9a8ac7a1e01c292b25db2985c = L.polyline(
+                [[54.5973, -5.9301], [50.9503, -1.3568]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_a5519d7240614e1552b6823bff34083d = L.polyline(
+                [[57.1497, -2.0943], [52.6309, 1.2974]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_af70e96b0bd624d16786aa7797b47fa5 = L.polyline(
+                [[57.1497, -2.0943], [58.957, -2.905]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.6}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_05b81362f8a63b188b322aa082522e4a = L.polyline(
+                [[57.1497, -2.0943], [59.8789, -1.2956]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_b366353bb12a971053995a74c043d19e = L.polyline(
+                [[56.462, -2.9707], [58.957, -2.905]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_fae6946493573015003591ee7c6cbfce = L.polyline(
+                [[57.4778, -4.2247], [58.2136, -6.3315]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_b9a011417c5c178eb690208c7bff05ec = L.polyline(
+                [[57.4778, -4.2247], [58.957, -2.905]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var poly_line_2876c555e8cbee7d3b54ae60431792f0 = L.polyline(
+                [[58.957, -2.905], [59.8789, -1.2956]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "6,6", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+            var circle_marker_dcc6bc3deb91306ebe15c6db3284c10a = L.circleMarker(
+                [51.5074, -0.1278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_6af745530171ead06f624c9709f3dc10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a37e2f9d035130b2d6411e9ffe2daba3 = $(`<div id="html_a37e2f9d035130b2d6411e9ffe2daba3" style="width: 100.0%; height: 100.0%;">         <b>London</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('London')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_6af745530171ead06f624c9709f3dc10.setContent(html_a37e2f9d035130b2d6411e9ffe2daba3);
+            
+        
+
+        circle_marker_dcc6bc3deb91306ebe15c6db3284c10a.bindPopup(popup_6af745530171ead06f624c9709f3dc10)
+        ;
+
+        
+    
+    
+            var circle_marker_33e2aa6d328dc9a629dbf246e6e626ec = L.circleMarker(
+                [53.4808, -2.2426],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_99c504af71bed8e8cce64a6fdf2f32cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_604f05a346c8c50592ef7805e83486c5 = $(`<div id="html_604f05a346c8c50592ef7805e83486c5" style="width: 100.0%; height: 100.0%;">         <b>Manchester</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Manchester')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_99c504af71bed8e8cce64a6fdf2f32cd.setContent(html_604f05a346c8c50592ef7805e83486c5);
+            
+        
+
+        circle_marker_33e2aa6d328dc9a629dbf246e6e626ec.bindPopup(popup_99c504af71bed8e8cce64a6fdf2f32cd)
+        ;
+
+        
+    
+    
+            var circle_marker_36779e3e29ccb452bfa23e506d78c96b = L.circleMarker(
+                [55.9533, -3.1883],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_c8a8b61591f76d97e4f936faa3b5f300 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e43fb94fb335f63bc56fd1bf418fd10 = $(`<div id="html_1e43fb94fb335f63bc56fd1bf418fd10" style="width: 100.0%; height: 100.0%;">         <b>Edinburgh</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Edinburgh')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_c8a8b61591f76d97e4f936faa3b5f300.setContent(html_1e43fb94fb335f63bc56fd1bf418fd10);
+            
+        
+
+        circle_marker_36779e3e29ccb452bfa23e506d78c96b.bindPopup(popup_c8a8b61591f76d97e4f936faa3b5f300)
+        ;
+
+        
+    
+    
+            var circle_marker_5a7b81bcca59c50e77fe4a0943200d03 = L.circleMarker(
+                [55.8642, -4.2518],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_cda3f23935f082c6fcf014fe8032fb10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e60c510bd3ca3624591951ba381af10 = $(`<div id="html_9e60c510bd3ca3624591951ba381af10" style="width: 100.0%; height: 100.0%;">         <b>Glasgow</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Glasgow')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_cda3f23935f082c6fcf014fe8032fb10.setContent(html_9e60c510bd3ca3624591951ba381af10);
+            
+        
+
+        circle_marker_5a7b81bcca59c50e77fe4a0943200d03.bindPopup(popup_cda3f23935f082c6fcf014fe8032fb10)
+        ;
+
+        
+    
+    
+            var circle_marker_c7baac4d67a1dfc0851d2fc2f637338d = L.circleMarker(
+                [52.4862, -1.8904],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_8b84d04a6e4785d5e053d9ef3107874e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c99492a71d67eec7ce70ee52ed4f5bb = $(`<div id="html_9c99492a71d67eec7ce70ee52ed4f5bb" style="width: 100.0%; height: 100.0%;">         <b>Birmingham</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Birmingham')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_8b84d04a6e4785d5e053d9ef3107874e.setContent(html_9c99492a71d67eec7ce70ee52ed4f5bb);
+            
+        
+
+        circle_marker_c7baac4d67a1dfc0851d2fc2f637338d.bindPopup(popup_8b84d04a6e4785d5e053d9ef3107874e)
+        ;
+
+        
+    
+    
+            var circle_marker_d7f334455dfc7494d1f56c510dfdc801 = L.circleMarker(
+                [51.4545, -2.5879],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_ded7f17860047380f252eecea351d512 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e95bae3a9fefbe442b25137399aa360 = $(`<div id="html_7e95bae3a9fefbe442b25137399aa360" style="width: 100.0%; height: 100.0%;">         <b>Bristol</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Bristol')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_ded7f17860047380f252eecea351d512.setContent(html_7e95bae3a9fefbe442b25137399aa360);
+            
+        
+
+        circle_marker_d7f334455dfc7494d1f56c510dfdc801.bindPopup(popup_ded7f17860047380f252eecea351d512)
+        ;
+
+        
+    
+    
+            var circle_marker_1444bf5716122b78b0ff91b71cb4fa70 = L.circleMarker(
+                [53.8008, -1.5491],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_a0a59fbd3a036c7f7ef66cfa916303c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_484155874463f8d2b2b52f21d10ab86e = $(`<div id="html_484155874463f8d2b2b52f21d10ab86e" style="width: 100.0%; height: 100.0%;">         <b>Leeds</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Leeds')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_a0a59fbd3a036c7f7ef66cfa916303c7.setContent(html_484155874463f8d2b2b52f21d10ab86e);
+            
+        
+
+        circle_marker_1444bf5716122b78b0ff91b71cb4fa70.bindPopup(popup_a0a59fbd3a036c7f7ef66cfa916303c7)
+        ;
+
+        
+    
+    
+            var circle_marker_35d6800042b4627ea94f7baac0544084 = L.circleMarker(
+                [53.4084, -2.9916],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_2c27c9948fe5f30f2ab9a3e30803507e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6e18a82b3f15c234d75368b815e3895 = $(`<div id="html_f6e18a82b3f15c234d75368b815e3895" style="width: 100.0%; height: 100.0%;">         <b>Liverpool</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Liverpool')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_2c27c9948fe5f30f2ab9a3e30803507e.setContent(html_f6e18a82b3f15c234d75368b815e3895);
+            
+        
+
+        circle_marker_35d6800042b4627ea94f7baac0544084.bindPopup(popup_2c27c9948fe5f30f2ab9a3e30803507e)
+        ;
+
+        
+    
+    
+            var circle_marker_40444e72734c7ffb1d1e4476937b5759 = L.circleMarker(
+                [54.9783, -1.6178],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_8468a04fb203bee07ac0d88a8f6c5b5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f140ba8244ab6916d849e4471687a7d0 = $(`<div id="html_f140ba8244ab6916d849e4471687a7d0" style="width: 100.0%; height: 100.0%;">         <b>Newcastle</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Newcastle')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_8468a04fb203bee07ac0d88a8f6c5b5f.setContent(html_f140ba8244ab6916d849e4471687a7d0);
+            
+        
+
+        circle_marker_40444e72734c7ffb1d1e4476937b5759.bindPopup(popup_8468a04fb203bee07ac0d88a8f6c5b5f)
+        ;
+
+        
+    
+    
+            var circle_marker_0332e615a6cafdee5d1214f71f1cd45d = L.circleMarker(
+                [51.4816, -3.1791],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_7fa0da2e77ff26d8359202bac3be7d6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e25f8e6e201d06ea34bb4d9a89bc2a0 = $(`<div id="html_0e25f8e6e201d06ea34bb4d9a89bc2a0" style="width: 100.0%; height: 100.0%;">         <b>Cardiff</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Cardiff')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_7fa0da2e77ff26d8359202bac3be7d6a.setContent(html_0e25f8e6e201d06ea34bb4d9a89bc2a0);
+            
+        
+
+        circle_marker_0332e615a6cafdee5d1214f71f1cd45d.bindPopup(popup_7fa0da2e77ff26d8359202bac3be7d6a)
+        ;
+
+        
+    
+    
+            var circle_marker_7823f3708862c50273f23440db1f2423 = L.circleMarker(
+                [54.5973, -5.9301],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_80bcd3211f801253bc7c19920268d6b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aac1f3d2214c0cf3633962e4f16d4046 = $(`<div id="html_aac1f3d2214c0cf3633962e4f16d4046" style="width: 100.0%; height: 100.0%;">         <b>Belfast</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Belfast')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_80bcd3211f801253bc7c19920268d6b7.setContent(html_aac1f3d2214c0cf3633962e4f16d4046);
+            
+        
+
+        circle_marker_7823f3708862c50273f23440db1f2423.bindPopup(popup_80bcd3211f801253bc7c19920268d6b7)
+        ;
+
+        
+    
+    
+            var circle_marker_7ea5bd8a50db9b6897c38c8225d07d22 = L.circleMarker(
+                [57.1497, -2.0943],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_4d030a689277661e01fc04198a7971da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7dd8822a94e8f0ba393df1c89d37f5bf = $(`<div id="html_7dd8822a94e8f0ba393df1c89d37f5bf" style="width: 100.0%; height: 100.0%;">         <b>Aberdeen</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Aberdeen')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_4d030a689277661e01fc04198a7971da.setContent(html_7dd8822a94e8f0ba393df1c89d37f5bf);
+            
+        
+
+        circle_marker_7ea5bd8a50db9b6897c38c8225d07d22.bindPopup(popup_4d030a689277661e01fc04198a7971da)
+        ;
+
+        
+    
+    
+            var circle_marker_58204c95f0deaf3921d53c27f5ccfa86 = L.circleMarker(
+                [56.462, -2.9707],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_2d4d5a918d27126ba19fc57c260347c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91d7e4f7a5d3ddc31b0c042dfdeb410f = $(`<div id="html_91d7e4f7a5d3ddc31b0c042dfdeb410f" style="width: 100.0%; height: 100.0%;">         <b>Dundee</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Dundee')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_2d4d5a918d27126ba19fc57c260347c9.setContent(html_91d7e4f7a5d3ddc31b0c042dfdeb410f);
+            
+        
+
+        circle_marker_58204c95f0deaf3921d53c27f5ccfa86.bindPopup(popup_2d4d5a918d27126ba19fc57c260347c9)
+        ;
+
+        
+    
+    
+            var circle_marker_ed03b8a80d76aeb7a285eaa464079e66 = L.circleMarker(
+                [57.4778, -4.2247],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_4fa9451f05075cc157ddd721c2cf4358 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c66e7a3ed68733a1e4cb383f5432b66 = $(`<div id="html_2c66e7a3ed68733a1e4cb383f5432b66" style="width: 100.0%; height: 100.0%;">         <b>Inverness</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Inverness')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_4fa9451f05075cc157ddd721c2cf4358.setContent(html_2c66e7a3ed68733a1e4cb383f5432b66);
+            
+        
+
+        circle_marker_ed03b8a80d76aeb7a285eaa464079e66.bindPopup(popup_4fa9451f05075cc157ddd721c2cf4358)
+        ;
+
+        
+    
+    
+            var circle_marker_2bfc4d990460869df0490e977d30a4a0 = L.circleMarker(
+                [52.6309, 1.2974],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_0fa7e2ff3ed5e92a07b3ccc4cad32a6c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1435b84521e962d532c024a86ab1a01 = $(`<div id="html_c1435b84521e962d532c024a86ab1a01" style="width: 100.0%; height: 100.0%;">         <b>Norwich</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Norwich')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_0fa7e2ff3ed5e92a07b3ccc4cad32a6c.setContent(html_c1435b84521e962d532c024a86ab1a01);
+            
+        
+
+        circle_marker_2bfc4d990460869df0490e977d30a4a0.bindPopup(popup_0fa7e2ff3ed5e92a07b3ccc4cad32a6c)
+        ;
+
+        
+    
+    
+            var circle_marker_a8001c6696241c32eb722679982375dd = L.circleMarker(
+                [50.9503, -1.3568],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_de2bdad16ccfbd07bab39eb1ce054330 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7e38354c7dd9472029231d2b20ed788 = $(`<div id="html_b7e38354c7dd9472029231d2b20ed788" style="width: 100.0%; height: 100.0%;">         <b>Southampton</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Southampton')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_de2bdad16ccfbd07bab39eb1ce054330.setContent(html_b7e38354c7dd9472029231d2b20ed788);
+            
+        
+
+        circle_marker_a8001c6696241c32eb722679982375dd.bindPopup(popup_de2bdad16ccfbd07bab39eb1ce054330)
+        ;
+
+        
+    
+    
+            var circle_marker_3105567e247b0e70b2339d4a48b127fc = L.circleMarker(
+                [50.7344, -3.4139],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_7da2b1378aa056020521b20c8eb0b632 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06046f3b64014c7c6318d5fd30a8aa25 = $(`<div id="html_06046f3b64014c7c6318d5fd30a8aa25" style="width: 100.0%; height: 100.0%;">         <b>Exeter</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Exeter')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_7da2b1378aa056020521b20c8eb0b632.setContent(html_06046f3b64014c7c6318d5fd30a8aa25);
+            
+        
+
+        circle_marker_3105567e247b0e70b2339d4a48b127fc.bindPopup(popup_7da2b1378aa056020521b20c8eb0b632)
+        ;
+
+        
+    
+    
+            var circle_marker_cd28be128a899de725fad14cfeecb4d0 = L.circleMarker(
+                [50.7792, -1.8425],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_4ab3f5679c3c0360110563423318b04e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3344f1a4b463402a9c7b2144416c23ba = $(`<div id="html_3344f1a4b463402a9c7b2144416c23ba" style="width: 100.0%; height: 100.0%;">         <b>Bournemouth</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Bournemouth')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_4ab3f5679c3c0360110563423318b04e.setContent(html_3344f1a4b463402a9c7b2144416c23ba);
+            
+        
+
+        circle_marker_cd28be128a899de725fad14cfeecb4d0.bindPopup(popup_4ab3f5679c3c0360110563423318b04e)
+        ;
+
+        
+    
+    
+            var circle_marker_d65201e240871f963a965465299ed442 = L.circleMarker(
+                [50.4406, -4.9954],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_43dab7443a235f9ee2f2d05eace6367c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6195dd3d6b263eaa8939c04d8aadb1ea = $(`<div id="html_6195dd3d6b263eaa8939c04d8aadb1ea" style="width: 100.0%; height: 100.0%;">         <b>Newquay</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Newquay')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_43dab7443a235f9ee2f2d05eace6367c.setContent(html_6195dd3d6b263eaa8939c04d8aadb1ea);
+            
+        
+
+        circle_marker_d65201e240871f963a965465299ed442.bindPopup(popup_43dab7443a235f9ee2f2d05eace6367c)
+        ;
+
+        
+    
+    
+            var circle_marker_c62da26c5b6d9a4f60f0684877c7edfb = L.circleMarker(
+                [58.2136, -6.3315],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_5b8600e26c1a4eef91c455fa24091cd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77bff965dfc61f392d3141b04ec471cd = $(`<div id="html_77bff965dfc61f392d3141b04ec471cd" style="width: 100.0%; height: 100.0%;">         <b>Stornoway</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Stornoway')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_5b8600e26c1a4eef91c455fa24091cd8.setContent(html_77bff965dfc61f392d3141b04ec471cd);
+            
+        
+
+        circle_marker_c62da26c5b6d9a4f60f0684877c7edfb.bindPopup(popup_5b8600e26c1a4eef91c455fa24091cd8)
+        ;
+
+        
+    
+    
+            var circle_marker_63e080cf5dcaf8177a4bc7b4b6097ee2 = L.circleMarker(
+                [58.957, -2.905],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_852afff6003c00a71975d543177f558b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ef3eccaf1fe271dc9f33e29ee45f35d = $(`<div id="html_6ef3eccaf1fe271dc9f33e29ee45f35d" style="width: 100.0%; height: 100.0%;">         <b>Kirkwall</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Kirkwall')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_852afff6003c00a71975d543177f558b.setContent(html_6ef3eccaf1fe271dc9f33e29ee45f35d);
+            
+        
+
+        circle_marker_63e080cf5dcaf8177a4bc7b4b6097ee2.bindPopup(popup_852afff6003c00a71975d543177f558b)
+        ;
+
+        
+    
+    
+            var circle_marker_fb46e6f1a330f96b8e12b7bc243e1b70 = L.circleMarker(
+                [57.4811, -7.3628],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_2550debe2b61b6752c4487be613a8ba5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5aa54ea0ffbfd466f5678ba7872ed719 = $(`<div id="html_5aa54ea0ffbfd466f5678ba7872ed719" style="width: 100.0%; height: 100.0%;">         <b>Benbecula</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Benbecula')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_2550debe2b61b6752c4487be613a8ba5.setContent(html_5aa54ea0ffbfd466f5678ba7872ed719);
+            
+        
+
+        circle_marker_fb46e6f1a330f96b8e12b7bc243e1b70.bindPopup(popup_2550debe2b61b6752c4487be613a8ba5)
+        ;
+
+        
+    
+    
+            var circle_marker_b9402f10b442e571f637efdc22200787 = L.circleMarker(
+                [59.8789, -1.2956],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_0bc1c7d60fde31cd888ca05855fbd7e6);
+        
+    
+        var popup_1aca9c0c64a7845829030a781a6b18fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8718048e5e869654f79163e1350f93d3 = $(`<div id="html_8718048e5e869654f79163e1350f93d3" style="width: 100.0%; height: 100.0%;">         <b>Sumburgh</b><br>         <span style="font-size:16px;color:#cc0000;cursor:pointer;font-weight:bold;"               onclick="window.showCity('Sumburgh')">             🔥 Simulate Failure         </span>     </div>`)[0];
+                popup_1aca9c0c64a7845829030a781a6b18fe.setContent(html_8718048e5e869654f79163e1350f93d3);
+            
+        
+
+        circle_marker_b9402f10b442e571f637efdc22200787.bindPopup(popup_1aca9c0c64a7845829030a781a6b18fe)
+        ;
+
+        
+    
+</script>
+</html>
