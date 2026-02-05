@@ -264,7 +264,7 @@ function showCity(city){
   }
 
   const html = `
-    <div class="title">${city} ✈️</div>
+    <div class="title">${city}</div>
 
     <div class="section">
       <div class="section-title">Network impact</div>
@@ -362,3 +362,4 @@ for c, v in sorted(deg_cent.items(), key=lambda x: x[1], reverse=True)[:5]:
 
 m.save(OUTPUT_HTML)
 print(f"\nSaved {OUTPUT_HTML}")
+
